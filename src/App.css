@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+body {
+  background-color: rgb(248,249 , 250);
+}
+.logo {
+  border-radius: 50%;
+  background-color: transparent;
+}
+.viedo {
+  width: 100%;
+  
+}
+.viedo video {
+  width: 100%;
+  
+}
+.navbar {
+  height: 4rem; 
+}
+
+.logo {
+  margin-top: 50%; 
+  height: auto;
+}
+
+.video {
+  height: calc(100vh - 4rem); 
+
+}
+.img-logo {
+  width: 10vw;
+  height: auto;
+
+}
+.img-logo img {
+  width: 100%;
+  height: auto;
+}
+
