@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,12 +9,10 @@ function CustomNavbar() {
   return (
     <Navbar bg="light" >
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <div className="img-logo">
             <img
               src="Green Beige Circle Healthy Food Logo.png"
-              // width="150"
-              // height="150"
               className="d-inline-block align-top logo"
               alt="Logo"
             />
@@ -27,7 +26,7 @@ function CustomNavbar() {
           <Nav.Link href="#login">
             <BsSearch />
           </Nav.Link>
-          <Nav.Link href="#login">
+          <Nav.Link as={Link} to="login">
             <BsFillPersonFill />
           </Nav.Link>
           <Nav.Link href="#cart">

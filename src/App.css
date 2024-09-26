@@ -77,3 +77,95 @@ body {
   height: auto;
 }
 
+
+/* Login page style */
+.login {
+  display: flex;
+  margin: 0 2rem;
+  
+}
+.login img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.login .logform {
+  margin: 3rem;
+  font-family: sans-serif;
+}
+.login .logform  h1 {
+  font-size: 2.5rem;
+  padding: 1.2rem 0;
+}
+.login .logform p {
+  font-size: .875rem;
+  margin-bottom: 1rem;
+}
+.login .logform input {
+  padding: 1rem;
+  display: flex;
+  margin: .5rem 0;
+  width: 35rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 1rem;
+}
+.login .logform input::placeholder {
+  font-size: 1rem;
+  color: #212121;
+  font-weight: 700;
+}
+.login .logform input:focus {
+  border-bottom: 2px solid #212121;
+
+}
+.login .logform  input[type=submit] {
+  width: 35rem;
+  padding: .75rem;
+  margin: .75rem 0;
+  background-color: #212121;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: .2rem;
+  border: none;
+}
+.login .logform  input[type=submit]:hover {
+  background-color: #e0e0e0;
+  color: #212121;
+  transition: .5s ease;
+}
+.login .logform h2 {
+  padding: 1rem 0;
+  padding-top: 3rem;
+}
+.login .logform a {
+  color: #212121;
+  padding: .75rem;
+  text-decoration: underline  #212121 2px;
+  text-underline-offset: 12px;
+  font-weight: 400;
+}
+.login .logform #sign, .login .logform #login ,#addBtn {
+  width: 7rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  font-weight: 600;
+  border: 2px solid #212121;
+}
+.login .logform #sign:hover, .login .logform #login:hover ,#addBtn:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+.login .logform #login {
+  width: 12rem;
+}
+hr {
+  width: 35rem;
+  margin: 2rem 0 ;
+  color: #e0e0e0;
+}
