@@ -1,6 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Top5Meals from "./mainTop5meals";
+ import Top5Meals from "./mainTop5meals";
+ import KetoMeals from "./ketoMeals";
+ import MainContentReviews from "./MainContentReviews";
 
 export default function MainContent() {
   return (
@@ -89,7 +91,9 @@ export default function MainContent() {
           </div>
         </div>
       </div>
-
+      <KetoMeals />   {/*medany update*/}
+      <Top5Meals />    {/*Yossef update*/}
+      <MainContentReviews />  {/*mo'men update*/}
     </>
   );
 }
