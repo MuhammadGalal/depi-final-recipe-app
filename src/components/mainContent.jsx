@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
+import Top5Meals from "./mainTop5meals";
 
 export default function MainContent() {
   return (
@@ -90,6 +90,7 @@ export default function MainContent() {
         </div>
       </div>
 
+      <Top5Meals/>
     </>
   );
 }
