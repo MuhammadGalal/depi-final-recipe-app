@@ -14,6 +14,7 @@ function App() {
       <Route path='/' element={<MainContent />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/create-account' element={<CreateAccount />} />
+      <div> this is clone</div>
       </Routes>
       </Router>
    </>
