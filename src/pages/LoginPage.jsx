@@ -7,23 +7,7 @@ export default function LoginPage() {
     navigate('/create-account')
   
   }
-
-  // useEffect(()=>{
-  //   fetch('http://localhost:8001/users')
-  //   .then(res => res.json())
-  //   .then(data => {
-  //     const user = data.find(user => user.email === email && user.password === password);
-  //     if (user) {
-  //       setIsSignedIn(true);
-  //       setError('');
-  //     } else {
-  //       setIsSignedIn(false);
-  //       setError('You are not an admin');
-  //     }
-  //   })
-  // }, [])
-  
-    
+ 
     return (
         <>
         

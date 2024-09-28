@@ -21,8 +21,10 @@ export default function MainContent() {
               <Card.Body>
                 <Card.Title>Avocado Toast</Card.Title>
                 <Card.Text>
-                  Wake up to flavor with Avocado Toast with Roasted Tomatoes!
-                  This perfect Breakfast with Avocado combines creamy
+                  Wake up to flavor with Avocado <br />
+                   Toast with Roasted Tomatoes! <br />
+                  This perfect Breakfast with <br /> 
+                  Avocado combines creamy <br />
                   avocado,juicy roasted tomatoes.
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
@@ -37,9 +39,10 @@ export default function MainContent() {
               <Card.Body>
                 <Card.Title>Salmon Rice Bowls</Card.Title>
                 <Card.Text>
-                  These easy Salmon Rice Bowls have become a healthy and <br />
-                  delicious staple for both lunch and dinner! They're quick and{" "}
-                  <br />
+                  These easy Salmon Rice Bowls <br />
+                   have become a healthy and <br />
+                  delicious staple for both lunch <br />
+                   and  dinner! They're quick and <br />
                   easy and truly packed
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
@@ -54,9 +57,11 @@ export default function MainContent() {
               <Card.Body>
                 <Card.Title>Mixed Dish</Card.Title>
                 <Card.Text>
-                  I can't tell which cheese it is but it looks like cameber or
-                  aged sweet cheese with figs, arugula, walnuts, peaches, and
-                  some type of glaze.
+                  I can't tell which cheese it is but <br />
+                   it looks like cameber or aged <br />
+                    sweet cheese with figs, arugula, <br />
+                     walnuts, peaches, and some <br />
+                      type of glaze.
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
                   See Dinner recipes
@@ -70,8 +75,10 @@ export default function MainContent() {
               <Card.Body>
                 <Card.Title>Cheesecake</Card.Title>
                 <Card.Text>
-                  This New York-style cheesecake is rich, dense yet creamy and
-                  not overly sweet. Together with the sweet base, you want to
+                  This New York-style cheesecake <br />
+                   is rich, dense yet creamy and <br />
+                  not overly sweet. Together with <br />
+                   the sweet base, you want to <br />
                   impress!
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
