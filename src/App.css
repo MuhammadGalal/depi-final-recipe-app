@@ -33,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,38 +42,44 @@
 
 
 body {
-  background-color: rgb(248,249 , 250);
+  background-color: rgb(248, 249, 250);
 }
+
 .logo {
   border-radius: 50%;
   background-color: transparent;
 }
+
 .viedo {
   width: 100%;
-  
+
 }
+
 .viedo video {
   width: 100%;
-  
+
 }
+
 .navbar {
-  height: 4rem; 
+  height: 4rem;
 }
 
 .logo {
-  margin-top: 50%; 
+  margin-top: 50%;
   height: auto;
 }
 
 .video {
-  height: calc(100vh - 4rem); 
+  height: calc(100vh - 4rem);
 
 }
+
 .img-logo {
   width: 10vw;
   height: auto;
 
 }
+
 .img-logo img {
   width: 100%;
   height: auto;
@@ -83,26 +90,31 @@ body {
 .login {
   display: flex;
   margin: 0 2rem;
-  
+
 }
-.login img{
+
+.login img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
 }
+
 .login .logform {
   margin: 3rem;
   font-family: sans-serif;
 }
-.login .logform  h1 {
+
+.login .logform h1 {
   font-size: 2.5rem;
   padding: 1.2rem 0;
 }
+
 .login .logform p {
   font-size: .875rem;
   margin-bottom: 1rem;
 }
+
 .login .logform input {
   padding: 1rem;
   display: flex;
@@ -113,16 +125,19 @@ body {
   border-bottom: 2px solid #e0e0e0;
   font-size: 1rem;
 }
+
 .login .logform input::placeholder {
   font-size: 1rem;
   color: #212121;
   font-weight: 700;
 }
+
 .login .logform input:focus {
   border-bottom: 2px solid #212121;
 
 }
-.login .logform  input[type=submit] {
+
+.login .logform input[type=submit] {
   width: 35rem;
   padding: .75rem;
   margin: .75rem 0;
@@ -132,23 +147,29 @@ body {
   border-radius: .2rem;
   border: none;
 }
-.login .logform  input[type=submit]:hover {
+
+.login .logform input[type=submit]:hover {
   background-color: #e0e0e0;
   color: #212121;
   transition: .5s ease;
 }
+
 .login .logform h2 {
   padding: 1rem 0;
   padding-top: 3rem;
 }
+
 .login .logform a {
   color: #212121;
   padding: .75rem;
-  text-decoration: underline  #212121 2px;
+  text-decoration: underline #212121 2px;
   text-underline-offset: 12px;
   font-weight: 400;
 }
-.login .logform #sign, .login .logform #login ,#addBtn {
+
+.login .logform #sign,
+.login .logform #login,
+#addBtn {
   width: 7rem;
   padding: .75rem;
   font-size: 1.2rem;
@@ -157,28 +178,35 @@ body {
   font-weight: 600;
   border: 2px solid #212121;
 }
-.login .logform #sign:hover, .login .logform #login:hover ,#addBtn:hover {
+
+.login .logform #sign:hover,
+.login .logform #login:hover,
+#addBtn:hover {
   background-color: #212121;
   color: #fff;
   transition: .5s ease;
 }
+
 .login .logform #login {
   width: 12rem;
 }
+
 hr {
   width: 35rem;
-  margin: 2rem 0 ;
+  margin: 2rem 0;
   color: #e0e0e0;
 }
 
 /* Top 5 meals >> ahmed youssef */
-a{
+a {
   display: block;
 }
-img{
+
+img {
   max-width: 100%;
 }
-.section-header{
+
+.section-header {
   text-align: center;
   text-transform: capitalize;
   font-family: "Permanent Marker", cursive;
@@ -186,192 +214,222 @@ img{
 }
 
 /* Top 5 meals >> ahmed youssef */
-.meals-container{
+.meals-container {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
   height: 650px;
   border-radius: 10px;
-  .top-meals-left-col{
-      width: 60%;
-      height: 100%;
-      text-align: center;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      border: 5px solid transparent;
-      &:hover{
-          & a{
-              &::after{
-                  background-color: rgba(0, 0, 0, 0.432);
-              }
-          }
-          & h2{
-              opacity: 1;
-          }
+
+  .top-meals-left-col {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid transparent;
+
+    &:hover {
+      & a {
+        &::after {
+          background-color: rgba(0, 0, 0, 0.432);
+        }
       }
-      & a{
-          position: relative;
-          height: 100%;
-          width: 100%;
-          background-image: url("https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              &::after{
-              position: absolute;
-              top: 0;
-              left: 0;
-              content: '';
-              transition: 0.7s;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.142);
-              }
+
+      & h2 {
+        opacity: 1;
       }
-      & h2{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 100%;
-          transform: translate(-50%, -50%);
-          z-index: 9;
-          font-size: 60px;
-          color: white;
-          opacity: 0;
-          transition: 0.7s;
-          font-family: "Permanent Marker", cursive;
-          font-weight: 600;
-      }
-      }
-  .top-meals-right-col{
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      max-height: 100%;
-      border-radius: 0 10px 10px 0;
-      border: 5px solid transparent;
-      & div{
-          position: relative;
-          width: 100%;
-          height: 25%;
-          overflow: hidden;
-          transition: 0.9s;
-          &::after{
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              transition: 0.7s;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.142);
-          }
-          &:hover{
-              height: 500px;
-              &::after{
-                  background-color: rgba(0, 0, 0, 0.432);
-              }
-              & a{
-              }
-              & h2{
-                  opacity: 1;
-              }
-          }
-          & a{
-              height: 100%;
-              width: 100%;
-              position: relative;
-          }
-          & h2{
-              position: absolute;
-              top: 20%;
-              z-index: 9;
-              text-align: center;
-              width: 100%;
-              font-size: 60px;
-              color: white;
-              opacity: 0;
-              transition: 0.7s;
-              font-family: "Permanent Marker", cursive;
-              font-weight: 600;
-          }
-      }
-      .top-1-meal{
-          border-radius: 10px 10px 0 0;
-          background-image: url("https://www.chelseasmessyapron.com/wp-content/uploads/2016/01/Pasta-E-Fagioli-2-683x1024.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          & h2{
-              top: 40%;
-          }
-      }
-      .top-2-meal{
-          background-image: url("https://pinchofyum.com/wp-content/uploads/Gochujang-Burgers-11-960x1440.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-      }
-      .top-3-meal{
-          background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/sweet-potato-peanut-stew.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-      }
-      .top-4-meal{
-          background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Cashew-Coffee-1-3.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          border-radius: 0 0 10px 10px;
-      }
-  }
-  @media(max-width: 992px){
+    }
+
+    & a {
       position: relative;
-      height: fit-content;
-      & .top-meals-left-col{
-          width: 100%;
-          height: 250px;
-          border-radius: 10px 10px 0 0;
-          & a{
-              background-position: 0 -140px;
-          }
+      height: 100%;
+      width: 100%;
+      background-image: url("https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        transition: 0.7s;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.142);
       }
-      & .top-meals-right-col {
-          flex-direction: row;
-          width: 100%;
-          & div {
-              height: 150px;
-              &:hover{
-                  height: 150px;
-              }
-              & a{
-                  height: 100%;
-                  & img{
-                      top: 0;
-                  }
-              }
-              & h2 {
-                  top: 30%;
-                  font-size: 20px;
-              }
-          }
-          .top-1-meal{
-              border-radius: 0 0 0 10px;
-          }
-      }
+    }
+
+    & h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+      font-size: 60px;
+      color: white;
+      opacity: 0;
+      transition: 0.7s;
+      font-family: "Permanent Marker", cursive;
+      font-weight: 600;
+    }
   }
-  @media(max-width: 768px) {
-      .top-meals-left-col{
-          & a{
-              background-position: center;
-          }
+
+  .top-meals-right-col {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-height: 100%;
+    border-radius: 0 10px 10px 0;
+    border: 5px solid transparent;
+
+    & div {
+      position: relative;
+      width: 100%;
+      height: 25%;
+      overflow: hidden;
+      transition: 0.9s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.7s;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.142);
       }
+
+      &:hover {
+        height: 500px;
+
+        &::after {
+          background-color: rgba(0, 0, 0, 0.432);
+        }
+
+
+        & h2 {
+          opacity: 1;
+        }
+      }
+
+      & a {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      & h2 {
+        position: absolute;
+        top: 20%;
+        z-index: 9;
+        text-align: center;
+        width: 100%;
+        font-size: 60px;
+        color: white;
+        opacity: 0;
+        transition: 0.7s;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 600;
+      }
+    }
+
+    .top-1-meal {
+      border-radius: 10px 10px 0 0;
+      background-image: url("https://www.chelseasmessyapron.com/wp-content/uploads/2016/01/Pasta-E-Fagioli-2-683x1024.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      & h2 {
+        top: 40%;
+      }
+    }
+
+    .top-2-meal {
+      background-image: url("https://pinchofyum.com/wp-content/uploads/Gochujang-Burgers-11-960x1440.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .top-3-meal {
+      background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/sweet-potato-peanut-stew.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .top-4-meal {
+      background-image: url("https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Cashew-Coffee-1-3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  @media(max-width: 992px) {
+    position: relative;
+    height: fit-content;
+
+    & .top-meals-left-col {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px 10px 0 0;
+
+      & a {
+        background-position: 0 -140px;
+      }
+    }
+
+    & .top-meals-right-col {
+      flex-direction: row;
+      width: 100%;
+
+      & div {
+        height: 150px;
+
+        &:hover {
+          height: 150px;
+        }
+
+        & a {
+          height: 100%;
+
+          & img {
+            top: 0;
+          }
+        }
+
+        & h2 {
+          top: 30%;
+          font-size: 20px;
+        }
+      }
+
+      .top-1-meal {
+        border-radius: 0 0 0 10px;
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    .top-meals-left-col {
+      & a {
+        background-position: center;
+      }
+    }
   }
 }
+
 /* Top 5 meals >> ahmed youssef */
 
 
@@ -415,12 +473,21 @@ img{
 
 .detailsContainer div {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 14px;
 }
+
 /* medany updated */
 
 /* mo'men updates */
 /* <----------------top sex reviews-------------> */
+
+.text-reviews {
+  font-size: 60px;
+  display: flex;
+  align-content: center;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
 
 .text-reviews-p {
   display: flex;
@@ -428,76 +495,39 @@ img{
   justify-content: center;
 }
 
-.text-reviews {
-  font-size: 50px;
-  display: flex;
-  align-content: center;
-  margin-bottom: 10px;
+.product--image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.text-reviews:hover{
-  cursor: pointer;
-  color: #282c34;
-}
-
-.top-reviews-divs {
-  width: 39rem;
-  display: flex;
-  margin: auto;
-  overflow-x: auto;
-}
-
-.top-reviews-divs::-webkit-scrollbar{
-  display: none;
-}
-
-.top-reviews {
-  border: 2px black solid;
-  width: 11rem;
-  height: 13rem;
-  margin-right: 2rem;
-  cursor: pointer;
-}
-
-.button-reviews {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7rem;
+.card-review {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
 }
 
 
-.name {
-  display: flex;
-  align-content: center;
-  padding-left: 2rem;
-}
-
-.btn-left {
-  width: 120px;
-  height: 40px;
-  border-radius: 20px;
-  margin-top: 1rem;
+.card-review button {
   border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.btn-right {
-  width: 120px;
-  height: 40px;
-  border-radius: 20px;
-  margin-top: 1rem;
-  border: none;
+.card-review button:hover {
+  opacity: 0.7;
 }
 
-.btn-left:hover {
-  background-color: #6c757d;
-  color: #fff;
-}
-
-.btn-right:hover {
-  background-color: #6c757d;
-  color: #fff;
-}
 /* mo'men updates */
 /* salah updates */
 
@@ -525,8 +555,8 @@ img{
 
 
 
-.footer h5{
-font-weight: bold;
+.footer h5 {
+  font-weight: bold;
 
 }
 
@@ -545,16 +575,19 @@ font-weight: bold;
   color: #000;
   font-size: 1.06rem;
 }
-.ft-3 ul{
+
+.ft-3 ul {
   list-style: none;
   padding-left: 0;
 }
+
 .ft-3 ul li {
   font-weight: 500;
   padding: 0.1rem 0;
   font-size: 1.06rem;
 
 }
+
 .ft-3 ul a {
   text-decoration: none;
   color: #000;
@@ -570,8 +603,8 @@ font-weight: bold;
   text-align: center;
   padding: 1rem 0;
   border-top: #f1f3f5;
-  border-top-style:solid ;
-  
+  border-top-style: solid;
+
 }
 
 .Last-footer p {
@@ -579,7 +612,9 @@ font-weight: bold;
   font-size: 1.2rem;
   font-weight: 700;
 }
-.Last-footer p i{
+
+.Last-footer p i {
   padding-right: 0.5rem;
 }
+
 /* salah updates */
