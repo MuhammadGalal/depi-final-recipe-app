@@ -74,7 +74,7 @@ body {
 }
 
 .img-logo {
-  width: 10vw;
+  width: 9vw;
   height: auto;
 
 }
@@ -510,7 +510,7 @@ img {
 }
 
 
-.card-review button {
+.btn-review {
   border: none;
   outline: 0;
   padding: 12px;
@@ -521,10 +521,67 @@ img {
   width: 100%;
   font-size: 18px;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
-.card-review button:hover {
+.btn-review:hover {
   opacity: 0.7;
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+
+/* <---------------profile-names----------------------> */
+
+.review-p {
+  margin-top: 6rem;
+}
+
+#img-prof {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #212121;
+  cursor: pointer;
+}
+
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.links-logo {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.links-logo:hover {
+  color: gray;
+  transition: .5s ease;
+}
+
+.btn-prof {
+  width: 30rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  font-weight: 600;
+  border: 2px solid #212121;
+  margin: 3rem 0 0 0;
+  font-size: 1.2rem;
+}
+
+
+.btn-prof:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
 }
 
 /* mo'men updates */

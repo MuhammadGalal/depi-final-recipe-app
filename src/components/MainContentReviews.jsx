@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import { Container } from "react-bootstrap";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useNavigate } from "react-router-dom";
 
 
 function MainContentReviews() {
@@ -26,6 +25,10 @@ function MainContentReviews() {
         }
     };
 
+
+    const navigaterev = useNavigate()
+
+
     return (
 
         <Container>
@@ -38,36 +41,36 @@ function MainContentReviews() {
                     <div className="card-review">
                         <img src="mo'men.jpg" alt="" className="product--image" />
                         <h2>Momen Ahmed</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/momenpage")} className="btn-review">See Review</button>
                     </div>
                     <div className="card-review">
                         <img src="galal.jpg" alt="" className="product--image" />
                         <h2>Mohamed Galal</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/galalpage")} className="btn-review">See Review</button>
                     </div>
                     <div className="card-review">
                         <img src="Youssef.jpg" alt="" className="product--image" />
                         <h2>Ahmed Youssef</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/ahmedpage")} className="btn-review">See Review</button>
                     </div>
                     <div className="card-review">
                         <img src="medany.jpg" alt="" className="product--image" />
                         <h2>Ahmed Medany</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/medanypage")} className="btn-review">See Review</button>
                     </div>
                     <div className="card-review">
                         <img src="salah.jpg" alt="" className="product--image" />
                         <h2>Mohamed salah</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/salahpage")} className="btn-review">See Review</button>
                     </div>
                     <div className="card-review">
                         <img src="hossam.jpg" alt="" className="product--image" />
                         <h2>Hossam El Din</h2>
-                        <button>See Review</button>
+                        <button onClick={() => navigaterev("/hossampage")} className="btn-review">See Review</button>
                     </div>
-                </Carousel>
-            </div>
-        </Container>
+                </Carousel >
+            </div >
+        </Container >
 
     )
 }

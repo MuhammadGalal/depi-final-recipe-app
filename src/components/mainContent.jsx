@@ -1,8 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
- import Top5Meals from "./mainTop5meals";
- import KetoMeals from "./ketoMeals";
- import MainContentReviews from "./MainContentReviews";
+import Top5Meals from "./mainTop5meals";
+import KetoMeals from "./ketoMeals";
+import MainContentReviews from "./MainContentReviews";
 
 export default function MainContent() {
   return (
@@ -24,8 +24,8 @@ export default function MainContent() {
                 <Card.Title>Avocado Toast</Card.Title>
                 <Card.Text>
                   Wake up to flavor with Avocado <br />
-                   Toast with Roasted Tomatoes! <br />
-                  This perfect Breakfast with <br /> 
+                  Toast with Roasted Tomatoes! <br />
+                  This perfect Breakfast with <br />
                   Avocado combines creamy <br />
                   avocado,juicy roasted tomatoes.
                 </Card.Text>
@@ -42,9 +42,9 @@ export default function MainContent() {
                 <Card.Title>Salmon Rice Bowls</Card.Title>
                 <Card.Text>
                   These easy Salmon Rice Bowls <br />
-                   have become a healthy and <br />
+                  have become a healthy and <br />
                   delicious staple for both lunch <br />
-                   and  dinner! They're quick and <br />
+                  and  dinner! They're quick and <br />
                   easy and truly packed
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
@@ -60,10 +60,10 @@ export default function MainContent() {
                 <Card.Title>Mixed Dish</Card.Title>
                 <Card.Text>
                   I can't tell which cheese it is but <br />
-                   it looks like cameber or aged <br />
-                    sweet cheese with figs, arugula, <br />
-                     walnuts, peaches, and some <br />
-                      type of glaze.
+                  it looks like cameber or aged <br />
+                  sweet cheese with figs, arugula, <br />
+                  walnuts, peaches, and some <br />
+                  type of glaze.
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
                   See Dinner recipes
@@ -78,9 +78,9 @@ export default function MainContent() {
                 <Card.Title>Cheesecake</Card.Title>
                 <Card.Text>
                   This New York-style cheesecake <br />
-                   is rich, dense yet creamy and <br />
+                  is rich, dense yet creamy and <br />
                   not overly sweet. Together with <br />
-                   the sweet base, you want to <br />
+                  the sweet base, you want to <br />
                   impress!
                 </Card.Text>
                 <Button variant="secondary" style={{ width: "100%" }}>
