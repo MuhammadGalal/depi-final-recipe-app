@@ -54,7 +54,7 @@ const KetoMeals = () => {
   };
 
   return (
-    <Container className="mainContainer" fluid>
+    <Container className="mainContainer">
       <Row xs={2} md={2}>
         {/* Image Container */}
         <Col className="imageContainer">
@@ -66,7 +66,6 @@ const KetoMeals = () => {
                   className="meal-image"
                   onMouseEnter={() => handleHover(meal)}
                   onMouseLeave={handleMouseLeave}
-                  fluid
                 />
               </Col>
             ))}
@@ -89,8 +88,11 @@ const KetoMeals = () => {
           )}
         </Col>
       </Row>
+      <button type="button" class="btn btn-primary btn-lg btn-block w-100 mt-3">
+        plan your meals now!
+      </button>
     </Container>
   );
 };
 
-export default KetoMeals;
+export default KetoMeals;
