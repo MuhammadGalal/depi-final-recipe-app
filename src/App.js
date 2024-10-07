@@ -30,7 +30,7 @@ function App() {
           <Route path='/salahpage' element={<SalahPage />} />
           <Route path='/hossampage' element={<HossamPage />} />
         </Routes>
-        <Footer /> {/*salah update*/}
+        <Footer /> {/* salah update */}
       </Router>
     </>
   );
