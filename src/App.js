@@ -32,7 +32,7 @@ function App() {
           <Route path='/salahpage' element={<SalahPage />} /> {/*Mo'men update*/}
           <Route path='/hossampage' element={<HossamPage />} /> {/*Mo'men update*/}
         </Routes>
-        <Footer /> {/*salah update*/}
+        <Footer /> {/* salah update */}
       </Router>
     </>
   );
