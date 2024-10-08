@@ -38,7 +38,7 @@ function CustomNavbar() {
               <Nav.Link as={Link} to="login">
                 <BsFillPersonFill />
               </Nav.Link>
-              <Nav.Link href="#cart">
+              <Nav.Link as={Link} to="favorites">
                 <BsCart />
               </Nav.Link>
             </Nav>
@@ -60,7 +60,7 @@ function CustomNavbar() {
             <Nav.Link as={Link} to="login">
               <BsFillPersonFill /> Login
             </Nav.Link>
-            <Nav.Link href="#cart">
+            <Nav.Link as={Link} to="favorites">
               <BsCart /> Cart
             </Nav.Link>
           </Nav>

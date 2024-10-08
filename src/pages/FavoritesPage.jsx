@@ -91,7 +91,7 @@ function FavoritesPage() {
 
                             </div>
                             <button type="button" id="btn-fevo">
-                                Contact You
+                                See Recipe
                             </button>
 
                         </div>
@@ -133,7 +133,7 @@ function FavoritesPage() {
 
                             </div>
                             <button type="button" id="btn-fevo">
-                                Contact You
+                                See Recipe
                             </button>
 
                         </div>
@@ -175,7 +175,7 @@ function FavoritesPage() {
 
                             </div>
                             <button type="button" id="btn-fevo">
-                                Contact You
+                                See Recipe
                             </button>
 
                         </div>
