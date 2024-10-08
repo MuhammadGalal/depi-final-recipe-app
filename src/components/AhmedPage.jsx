@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -6,7 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 function AhmedPage() {
 
-    const navigaterev = useNavigate()
+    const navigaterev = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return <Container>
         <div className="review-p">

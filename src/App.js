@@ -11,6 +11,7 @@ import AhmedPage from './components/AhmedPage';
 import MedanyPage from './components/MedanyPage';
 import SalahPage from './components/SalahPage';
 import HossamPage from './components/HossamPage';
+import FavoritesPage from './pages/FavoritesPage';
 
 
 
@@ -23,12 +24,13 @@ function App() {
           <Route path='/' element={<MainContent />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/create-account' element={<CreateAccount />} />
-          <Route path='/momenpage' element={<MomenPage />} />
-          <Route path='/galalpage' element={<GalalPage />} />
-          <Route path='/ahmedpage' element={<AhmedPage />} />
-          <Route path='/medanypage' element={<MedanyPage />} />
-          <Route path='/salahpage' element={<SalahPage />} />
-          <Route path='/hossampage' element={<HossamPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} /> {/*Mo'men update*/}
+          <Route path='/momenpage' element={<MomenPage />} /> {/*Mo'men update*/}
+          <Route path='/galalpage' element={<GalalPage />} /> {/*Mo'men update*/}
+          <Route path='/ahmedpage' element={<AhmedPage />} /> {/*Mo'men update*/}
+          <Route path='/medanypage' element={<MedanyPage />} /> {/*Mo'men update*/}
+          <Route path='/salahpage' element={<SalahPage />} /> {/*Mo'men update*/}
+          <Route path='/hossampage' element={<HossamPage />} /> {/*Mo'men update*/}
         </Routes>
         <Footer /> {/*salah update*/}
       </Router>
