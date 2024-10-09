@@ -269,7 +269,13 @@ img {
   background: none;
   outline: 0;
   border: 0;
+  color: #f24646;
 
+}
+.favorite-icon button:hover {
+  scale: 1.1;
+  color: #c00606;
+  transition: 1s ease;
 }
 
 /* breakfast page */
