@@ -1,8 +1,32 @@
-
-import React from "react";
+import { useState } from 'react';
 import {  useNavigate } from 'react-router-dom';
 
 export default function CreateAccount() {
+
+  const [accountData, setAccountData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: ''
+
+  })
+
+  const handleChange = (e)=> {
+    const {name, value} = e.target;
+    setAccountData({...accountData, [name]: value})
+  }
+
+  const handleSubmit = (e)=> {
+    e.preventDefault()
+
+    fetch('http://localhost:3001/users', {method: "POST",
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify(accountData)
+    })
+
+    
+    
+  }
   const navigate = useNavigate()
   const handleClick = () => {
     navigate('/login')
@@ -17,35 +41,39 @@ export default function CreateAccount() {
   <div className="logform">
     <h1>Create account</h1>
     <p>Please enter your details to create an account.</p>
-    <form action="" >
+    <form action="" onSubmit={handleSubmit} >
       <input
         type="text"
-        name=""
+        name="firstName"
         id="first"
         placeholder="First Name*"
-        required=""
+        required
+        onChange={handleChange}
       />
       <input
         type="text"
-        name=""
+        name="lastName"
         id="last"
         placeholder="Last Name*"
-        required=""
+        required
+        onChange={handleChange}
       />
       <input
         type="email"
-        name=""
+        name="email"
         id="email"
         placeholder="Email address*"
-        required=""
+        required
+        onChange={handleChange}
       />
       <input
         type="password"
-        name=""
+        name="password"
         id="password"
         placeholder="Password*"
         minLength={6}
-        required=""
+        required
+        onChange={handleChange}
       />
       <input type="submit" defaultValue="Create Account" />
     </form>

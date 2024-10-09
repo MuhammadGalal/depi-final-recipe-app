@@ -1,42 +1,77 @@
-
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
-  const navigate = useNavigate()
-  const handleClick = () => {
-    navigate('/create-account')
+  const [data, setData] = useState({
+    email: '',
+    password: ''
+  });
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch("http://localhost:3001/users")
+      .then((res) => res.json())
+      .then((users) => {
+        const user = users.find(
+          (user) => user.email === data.email && user.password === data.password
+        );
+
+        if (user) {
+          navigate('/profile'); 
+        } else {
+          setError('Invalid email or password. Please try again.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching users:', error);
+        setError('An error occurred while logging in. Please try again later.');
+      });
+  };
+
+  const handleClick = () => {
+    navigate('/create-account');
+  };
 
   return (
     <>
-
       <div className="login">
-
         <div className="img">
           <img src='Login Image.jpg' alt="" />
         </div>
         <div className="logform">
           <h1>Login</h1>
           <p>Please enter your e-mail and password:</p>
-          <form action="" onsubmit="sign()">
+          <form onSubmit={handleSubmit}>
             <input
               type="email"
-              name=""
+              name="email"
               id="e-mail"
               placeholder="Email address*"
-              required=""
+              required
+              value={data.email}
+              onChange={handleChange}
             />
             <input
               type="password"
-              name=""
+              name="password"
               id="pass"
               placeholder="Password*"
               minLength={6}
-              required=""
+              required
+              value={data.password}
+              onChange={handleChange}
             />
-            <input type="submit" defaultValue="Login" />
+            <input type="submit" value="Login" />
           </form>
+          {error && <p className="error">{error}</p>}
           <a href="*">FORGOT PASSWORD?</a>
           <hr />
           <h2>Not signed up yet?</h2>
@@ -48,7 +83,6 @@ export default function LoginPage() {
           </button>
         </div>
       </div>
-
     </>
-  )
+  );
 }

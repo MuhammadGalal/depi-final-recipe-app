@@ -20,6 +20,7 @@ const categoryNavigate = useNavigate()
           src="8176157-hd_1366_720_25fps.mp4"
         ></video>
       </div>
+      <hr className="hr" />
       <div className="container mt-5">
         <div className="row">
           <div className="col-12 col-md-6 col-lg-3 mb-4 box-container">
@@ -96,6 +97,7 @@ const categoryNavigate = useNavigate()
           </div>
         </div>
       </div>
+      <hr className="hr" />
       <KetoMeals />   {/*medany update*/}
       <Top5Meals />    {/*Yossef update*/}
       <MainContentReviews />  {/*mo'men update*/}
