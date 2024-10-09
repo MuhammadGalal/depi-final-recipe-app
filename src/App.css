@@ -2,7 +2,9 @@
 .App {
   text-align: center;
 }
-
+*{
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -429,9 +431,220 @@ img {
     }
   }
 }
-
 /* Top 5 meals >> ahmed youssef */
 
+/* Top Rated Meal page >> ahmed youssef */
+.top-rated-meal{
+  margin-top: 3.3rem;
+  font-family: "Permanent Marker", cursive;
+  & svg{
+    transition: 0.5s;
+    &:hover{
+      color: #52d082;
+    }
+  }
+  .recipe-head{
+    .section-header{
+      width: auto;
+    }
+  }
+  .main-section-header{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    & svg{
+      font-size: 3.125rem;
+      color: #52d082;
+    }
+    .curved-line{
+      margin: -14px 0 0 -10px;
+      width: 110%;
+      height: 26px;
+      border: solid 5px #52d082;
+      border-color: #52d082 transparent transparent transparent;
+      border-radius: 50% / 26px 26px 0 0;
+    }
+  }
+  .section-header{
+    display: block;
+    width: fit-content;
+    text-align: start;
+    font-size: 30px;
+    .curved-line{
+      margin: -6px 0 0 -10px;
+      width: 110%;
+      height: 26px;
+      border: solid 5px #52d082;
+      border-color: #52d082 transparent transparent transparent;
+      border-radius: 50% / 26px 26px 0 0;
+    }
+  }
+  .meal-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 10px;
+    margin-top: 2.5rem;
+    .recipe-header{
+      font-size: 3.125rem;
+    }
+    .top-rated-meal-col-left{
+      & i{
+        font-size: 1.5rem;
+        color: #52d082;
+      }
+      .rate-share{
+        display: flex;
+        align-items: center;
+        .share{
+          display: flex;
+          margin-left: 1.25rem;
+          & a{
+            color: black;
+            margin-left: 0.5rem;
+            &:hover{
+              color: #52d082;
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+      .recipe-bio{
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        line-height: 2;
+        text-wrap: pretty;
+      }
+      .recipe-time{
+        display: flex;
+        align-items: center;
+        & div{
+          display: flex;
+          align-items: center;
+          &:last-child{
+            margin-left: 1.6rem;
+          }
+          & i{
+            font-size: 1.7rem;
+            margin-right: 0.5rem;
+          }
+        }
+        & p{
+          margin: 0;
+        }
+      }
+    }
+    .top-rated-meal-col-right{
+      width: 100%;
+      height: 100%;
+      .meal-photo{
+        background-image: url("https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        width: 100%;
+        min-height: 400px;
+        & img{
+          border-radius: 10px;
+          max-width: 100%;
+          max-height: 420px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      & .top-rated-meal-col-right {
+        & .meal-photo {
+            & img {
+              max-height: 100%;
+            }
+          }
+        }
+    }
+  }
+  .recipe-body{
+    margin-top: 2rem;
+    .recipe-container{
+      display: flex;
+      gap: 30px;
+      .instructions{
+        background-color: #f3f4f5;
+        padding-left: 20px;
+        border-radius: 10px;
+        .recipe-content{
+          text-wrap: balance;
+          padding-left: 10px;
+          & div{
+            display: flex;
+            margin-top: 20px;
+            & p{
+              line-height: 2;
+              margin: 0 0 0 10px;
+            }
+            & span{
+              font-size: 1.6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              height: 30px;
+              width: 30px;
+              padding: 7px;
+              background-color: #52d082;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    @media(max-width: 767px){
+      .recipe-container{
+        flex-wrap: wrap;
+        gap: 10px;
+        .ingredients{
+          width: 100%;
+          .section-header{
+            margin: auto;
+          }
+        }
+        .instructions{
+          padding-left: 0;
+          .section-header{
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+  .review{
+    margin-top: 2rem;
+    & form{
+      background-color: #f3f4f5;
+      padding: 10px;
+      border-radius: 10px;
+      #formHorizontalReview{
+        padding-bottom: 100px;
+      }
+      .form-control{
+        transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+        &:focus {
+          color: var(--bs-body-color);
+          background-color: var(--bs-body-bg);
+          border-color: rgb(82, 208, 130);
+          outline: 0;
+          box-shadow: 0 0 0 .25rem rgba(82, 208, 130, 0.481);
+      }
+      }
+      & button{
+        background-color: #52d082;
+        border-color: #52d082;
+      }
+    }
+  }
+}
+/* Top Rated Meal page >> ahmed youssef */
 
 /* medany updated */
 .mainContainer {

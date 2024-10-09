@@ -11,6 +11,7 @@ import AhmedPage from './components/AhmedPage';
 import MedanyPage from './components/MedanyPage';
 import SalahPage from './components/SalahPage';
 import HossamPage from './components/HossamPage';
+import TopRatedMeal from './pages/TopRatedMeal';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' element={<MainContent />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/create-account' element={<CreateAccount />} />
+          <Route path='top-rated-meal' element={<TopRatedMeal />}/>
           <Route path='/momenpage' element={<MomenPage />} />
           <Route path='/galalpage' element={<GalalPage />} />
           <Route path='/ahmedpage' element={<AhmedPage />} />
