@@ -96,9 +96,9 @@ const categoryNavigate = useNavigate()
           </div>
         </div>
       </div>
-      <KetoMeals />  {/*medany update*/}
-      <Top5Meals />   {/* Yossef update*/}
-      <MainContentReviews /> {/* mo'men update*/}
+      <KetoMeals />   {/*medany update*/}
+      <Top5Meals />    {/*Yossef update*/}
+      <MainContentReviews />  {/*mo'men update*/}
     </>
   );
 }
