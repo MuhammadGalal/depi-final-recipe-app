@@ -3,8 +3,13 @@ import Card from "react-bootstrap/Card";
 import Top5Meals from "./mainTop5meals";
 import KetoMeals from "./ketoMeals";
 import MainContentReviews from "./MainContentReviews";
+import { useNavigate } from "react-router-dom";
+
 
 export default function MainContent() {
+
+
+const categoryNavigate = useNavigate()
   return (
     <>
       <div className="viedo">
@@ -29,7 +34,7 @@ export default function MainContent() {
                   Avocado combines creamy <br />
                   avocado,juicy roasted tomatoes.
                 </Card.Text> */}
-                <Button className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
+                <Button onClick={()=> categoryNavigate('/breakfast')} className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
                   See Breakfast recipes
                 </Button>
               </Card.Body>
@@ -47,7 +52,7 @@ export default function MainContent() {
                   and  dinner! They're quick and <br />
                   easy and truly packed
                 </Card.Text> */}
-                <Button className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
+                <Button onClick={()=> categoryNavigate('/lunch')} className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
                   See Lunch recipes
                 </Button>
               </Card.Body>
