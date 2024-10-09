@@ -33,8 +33,8 @@ function MainContentReviews() {
         </div>
         <Carousel responsive={responsive}>
           <div className="card-review">
-            <img src="mo'men.jpg" alt="" className="product--image" />
-            <h2>Momen Ahmed</h2>
+            <img src="mo'men.jpg" alt="Mo'men Ahmed" className="product--image" />
+            <h2>Mo'men Ahmed</h2>
             <button
               onClick={() => navigaterev("/momenpage")}
               className="btn-review"
@@ -43,7 +43,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="galal.jpg" alt="" className="product--image" />
+            <img src="galal.jpg" alt="Mohamed Galal" className="product--image" />
             <h2>Mohamed Galal</h2>
             <button
               onClick={() => navigaterev("/galalpage")}
@@ -53,7 +53,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="Youssef.jpg" alt="" className="product--image" />
+            <img src="Youssef.jpg" alt="Ahmed Youssef" className="product--image" />
             <h2>Ahmed Youssef</h2>
             <button
               onClick={() => navigaterev("/ahmedpage")}
@@ -63,7 +63,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="medany.jpg" alt="" className="product--image" />
+            <img src="medany.jpg" alt="Ahmed Medany" className="product--image" />
             <h2>Ahmed Medany</h2>
             <button
               onClick={() => navigaterev("/medanypage")}
@@ -73,7 +73,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="salah.jpg" alt="" className="product--image" />
+            <img src="salah.jpg" alt="Mohamed salah" className="product--image" />
             <h2>Mohamed salah</h2>
             <button
               onClick={() => navigaterev("/salahpage")}
@@ -83,7 +83,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="hossam.jpg" alt="" className="product--image" />
+            <img src="hossam.jpg" alt="Hossam El Din" className="product--image" />
             <h2>Hossam El Din</h2>
             <button
               onClick={() => navigaterev("/hossampage")}

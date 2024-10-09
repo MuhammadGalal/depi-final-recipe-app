@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
 }
@@ -213,6 +212,50 @@ img {
   text-transform: capitalize;
   font-family: "Permanent Marker", cursive;
   margin: 10px 0;
+}
+.boxes-btn {
+  background-color: #212121 !important;
+  color: #e0e0e0 !important;
+  font-weight: 500 !important;
+}
+.boxes-btn:hover {
+  background-color: #e0e0e0 !important;;
+  color: #212121 !important;;
+}
+
+.img-box {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .box-container {
+    width: 80%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .login, .login .logform {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .login img {
+    display: none;
+  }
+  .login .logform input { 
+    width: 100%;
+  }
+  .login .logform input[type=submit] {
+    width: 100%
+  }
+  hr {
+    width: 50%;
+  }
 }
 
 /* Top 5 meals >> ahmed youssef */
@@ -692,14 +735,16 @@ img {
 /* medany updated */
 
 /* mo'men updates */
-/* <----------------top sex reviews-------------> */
+/* <----------------top six reviews-------------> */
 
 .text-reviews {
-  font-size: 60px;
+  font-size: 40px;
   display: flex;
   align-content: center;
   margin: 20px 0 20px 0;
   cursor: pointer;
+  text-transform: capitalize;
+  font-family: "Permanent Marker", cursive;
 }
 
 .text-reviews-p {
@@ -749,7 +794,7 @@ img {
 /* <---------------profile-names----------------------> */
 
 .review-p {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 #img-prof {
@@ -793,6 +838,85 @@ img {
 
 
 .btn-prof:hover {
+  background-color: #212121;
+  color: #fff;
+  transition: .5s ease;
+}
+
+
+/* <----------------------fevorites-page-------------------> */
+
+.review-p-fevo {
+  margin-top: 4rem;
+}
+
+.cover-photo {
+  max-width: 100%;
+}
+
+.cover-photo img {
+  height: auto;
+  object-fit: cover;
+}
+
+#img-favo {
+  width: 10rem;
+  height: 12rem;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#favo-para {
+  color: gray;
+}
+
+.links-favo {
+  display: flex;
+  /* justify-content: flex-start; */
+
+}
+
+.star-logo {
+  font-size: 2rem;
+  color: gold;
+}
+
+#rate {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: #000;
+}
+
+#love-logo {
+  margin: 0 0 0 2rem;
+  font-size: 1.8rem;
+  color: rgb(242, 70, 70);
+  cursor: pointer;
+}
+
+#delete-logo {
+  margin: 0.1rem 0 0 2rem;
+  font-size: 1.7rem;
+  color: red;
+  cursor: pointer;
+}
+
+
+
+#btn-fevo {
+  width: 9rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #212121;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  border: 2px solid #212121;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+#btn-fevo:hover {
   background-color: #212121;
   color: #fff;
   transition: .5s ease;
