@@ -162,7 +162,7 @@ export default function TopRatedMeal() {
             <Form>
               <Form.Group as={Row} className="mb-3">
                 <Form.Label column sm={2}>
-                  Name
+                Name
                 </Form.Label>
                 <Col sm={10}>
                   <Form.Control type="text" placeholder="Your Name" />
