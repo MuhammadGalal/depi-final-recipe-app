@@ -280,6 +280,42 @@ img {
   color: #c00606;
   transition: 1s ease;
 }
+/* salah breakfast update */
+.pdcard{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.pdcard img{
+  border-radius: 30px;
+  padding: 20px;
+}
+.pdcardbody{
+  padding: 10px;
+  margin-top: -15px;
+
+}
+
+.wsbtn button{
+  border-radius: 50px;
+  
+}
+.wsbtn button:hover{
+  background-color: black;
+  border: none;
+}
+.wsbtn a{
+  font-size: 2rem;
+}
+
+.wsbtn a:hover{
+  transition: 0.3sec;
+  font-size: 2.25rem;
+  cursor: pointer;
+  
+}
+/* salah breakfast update */
+
+
 
 /* breakfast page */
 @media screen and (max-width: 600px) {
