@@ -347,6 +347,30 @@ img {
     width: 50%;
   }
 }
+/* profilePage */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+.profile-header img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover; 
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+input[type=file]  {
+  
+}
+
+/* profilePage */
 
 /* Top 5 meals >> ahmed youssef */
 .meals-container {
