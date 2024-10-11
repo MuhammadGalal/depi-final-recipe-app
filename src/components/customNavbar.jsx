@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -14,8 +14,11 @@ function CustomNavbar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const navigate = useNavigate()
+
   const handleLogout = () => {
     setUser(null); 
+    navigate('/')
   };
 
   return (

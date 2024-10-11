@@ -74,7 +74,7 @@ export default function LoginPage() {
           <input type="submit" value="Login" />
         </form>
         {error && <p className="error">{error}</p>}
-        <a href="#">FORGOT PASSWORD?</a>
+        <a href="*">FORGOT PASSWORD?</a>
         <hr />
         <h2>Not signed up yet?</h2>
         <p>- View your order history</p>
