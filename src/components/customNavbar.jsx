@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BsCart, BsFillPersonFill, BsSearch } from 'react-icons/bs';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useUser } from '../context/UserContext';
 
 function CustomNavbar() {
+  const { user, setUser } = useUser() 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    setUser(null); 
+    navigate('/')
+  };
 
   return (
     <>
@@ -35,10 +44,27 @@ function CustomNavbar() {
               <Nav.Link href="#search">
                 <BsSearch />
               </Nav.Link>
-              <Nav.Link as={Link} to="login">
-                <BsFillPersonFill />
-              </Nav.Link>
-              <Nav.Link as={Link} to="favorites">
+              {user ? (
+                <>
+                  <Nav.Link as={Link} to={`/profile/${user.id}`}>
+                    <img 
+                      src={user.profileImage} 
+                      alt={user.firstName} 
+                      className="rounded-circle" 
+                      style={{ width: '30px', height: '30px', marginRight: '5px' }} 
+                    />
+                    <span>{user.firstName}</span>
+                  </Nav.Link>
+                  <Nav.Link onClick={handleLogout}>
+                    Logout
+                  </Nav.Link>
+                </>
+              ) : (
+                <Nav.Link as={Link} to="/login">
+                  <BsFillPersonFill />
+                </Nav.Link>
+              )}
+              <Nav.Link as={Link} to="/favorites">
                 <BsCart />
               </Nav.Link>
             </Nav>
@@ -46,7 +72,6 @@ function CustomNavbar() {
         </Container>
       </Navbar>
 
-      {/* Offcanvas for sidebar */}
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
@@ -57,10 +82,25 @@ function CustomNavbar() {
             <Nav.Link href="#search">
               <BsSearch /> Search
             </Nav.Link>
-            <Nav.Link as={Link} to="login">
-              <BsFillPersonFill /> Login
-            </Nav.Link>
-            <Nav.Link as={Link} to="favorites">
+            {user ? (
+              <>
+                <Nav.Link as={Link} to="/profile">
+                  <img 
+                    src={user.profileImage} 
+                    alt={user.firstName} 
+                    className="rounded-circle" 
+                    style={{ width: '30px', height: '30px', marginRight: '5px' }} 
+                  />
+                  <span>{user.firstName}</span>
+                </Nav.Link>
+                <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
+              </>
+            ) : (
+              <Nav.Link as={Link} to="/login">
+                <BsFillPersonFill /> Login
+              </Nav.Link>
+            )}
+            <Nav.Link as={Link} to="/favorites">
               <BsCart /> Cart
             </Nav.Link>
           </Nav>
@@ -71,4 +111,3 @@ function CustomNavbar() {
 }
 
 export default CustomNavbar;
-

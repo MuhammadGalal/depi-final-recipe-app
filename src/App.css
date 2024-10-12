@@ -280,6 +280,42 @@ img {
   color: #c00606;
   transition: 1s ease;
 }
+/* salah breakfast update */
+.pdcard{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.pdcard img{
+  border-radius: 30px;
+  padding: 20px;
+}
+.pdcardbody{
+  padding: 10px;
+  margin-top: -15px;
+
+}
+
+.wsbtn button{
+  border-radius: 50px;
+  
+}
+.wsbtn button:hover{
+  background-color: black;
+  border: none;
+}
+.wsbtn a{
+  font-size: 2rem;
+}
+
+.wsbtn a:hover{
+  transition: 0.3sec;
+  font-size: 2.25rem;
+  cursor: pointer;
+  
+}
+/* salah breakfast update */
+
+
 
 /* breakfast page */
 @media screen and (max-width: 600px) {
@@ -311,6 +347,30 @@ img {
     width: 50%;
   }
 }
+/* profilePage */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 2rem auto;
+}
+.profile-header img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover; 
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+input[type=file]  {
+  
+}
+
+/* profilePage */
 
 /* Top 5 meals >> ahmed youssef */
 .meals-container {
@@ -789,7 +849,7 @@ img {
 /* medany updated */
 
 /* mo'men updates */
-/* <----------------top six reviews-------------> */
+/* <----------------top-six-reviews-------------> */
 
 .text-reviews {
   font-size: 40px;
@@ -926,7 +986,7 @@ img {
 
 .links-favo {
   display: flex;
-  /* justify-content: flex-start; */
+  
 
 }
 

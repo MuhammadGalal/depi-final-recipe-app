@@ -18,7 +18,7 @@ function HossamPage() {
             <div className="row" id="bg-prof-img">
                 <div className="col-md-5" >
                     <img
-                        src="Hossam.jpg"
+                        src="hossam.jpg"
                         alt=""
                         className="img-fluid my-5"
                         id="img-prof"
