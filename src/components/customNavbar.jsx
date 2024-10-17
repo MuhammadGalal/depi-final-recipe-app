@@ -51,7 +51,7 @@ function CustomNavbar() {
                       src={user.profileImage} 
                       alt={user.firstName} 
                       className="rounded-circle" 
-                      style={{ width: '30px', height: '30px', marginRight: '5px' }} 
+                      style={{ width: '30px', height: '30px', marginRight: '5px', border:' 2px solid #48cb57' }} 
                     />
                     <span>{user.firstName}</span>
                   </Nav.Link>
@@ -89,7 +89,7 @@ function CustomNavbar() {
                     src={user.profileImage} 
                     alt={user.firstName} 
                     className="rounded-circle" 
-                    style={{ width: '30px', height: '30px', marginRight: '5px' }} 
+                    style={{ width: '30px', height: '30px', marginRight: '5px', border:' 2px solid #48cb57' }} 
                   />
                   <span>{user.firstName}</span>
                 </Nav.Link>
