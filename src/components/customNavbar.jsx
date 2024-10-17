@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { BsCart, BsFillPersonFill, BsSearch } from 'react-icons/bs';
+import { BsHeart , BsFillPersonFill, BsSearch } from 'react-icons/bs';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useUser } from '../context/UserContext';
 
@@ -65,7 +65,7 @@ function CustomNavbar() {
                 </Nav.Link>
               )}
               <Nav.Link as={Link} to="/favorites">
-                <BsCart />
+              <BsHeart />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -101,7 +101,7 @@ function CustomNavbar() {
               </Nav.Link>
             )}
             <Nav.Link as={Link} to="/favorites">
-              <BsCart /> Cart
+            <BsHeart /> Favorite
             </Nav.Link>
           </Nav>
         </Offcanvas.Body>

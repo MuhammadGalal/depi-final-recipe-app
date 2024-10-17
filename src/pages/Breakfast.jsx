@@ -1,16 +1,27 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 import { CiBookmarkPlus} from "react-icons/ci";
-import { useState } from 'react';
 import { CiStar } from "react-icons/ci";
 import { BiSolidStar } from "react-icons/bi";
 
 export default function Breakfast() {
-    const [rate, setRate] = useState(0);
+    const [ratings, setRatings] = useState({});
+    const [recipes, setRecipes] = useState([])
 
-    const handleClick = (val) => {
-        setRate(val);
-        console.log(val);
-    }
+    const handleClick = (recipeId, val) => {
+        setRatings(prevRate => ({
+            ...prevRate,
+            [recipeId]: val,
+        }));
+    };
+
+    useEffect(()=> {
+        fetch('http://localhost:3001/breakfast')
+        .then(res=> res.json())
+        .then((data) => {
+            setRecipes(data)
+        })
+
+    },[])
 
     return (
         <>
@@ -58,16 +69,13 @@ export default function Breakfast() {
         <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
 
 
-
-            <div class="col">
+        {recipes.map(recipe => (
+            <div class="col" key={recipe.id}>
                 <div class="card pdcard">
-                    <img src="https://imageplaceholder.net/600x400" class="card-img-top" alt="pic for the recipe"/>
+                    <img src={recipe.image} class="card-img-top" alt="pic for the recipe"/>
                     <div class="card-body pdcardbody">
-                        <h5 class="card-title">TIRAMISU CAKE</h5>
-                        <p class="card-text">here we put the discription and make it 
-                            blaaaaaaaaaaaaa blaaaaaaaaaaaaablaaaaaaaaaa
-                            blaaaaaaaaaaaaaaaaa
-                        </p>
+                        <h5 class="card-title">{recipe.title}</h5>
+                        <p class="card-text">{recipe.description}</p>
                     </div>
                     <div class='mb-4 d-flex justify-content-around putyourclasses'>
                         <div className="star-rating">
@@ -75,9 +83,9 @@ export default function Breakfast() {
                                     <span
                                         key={star}
                                         className="star"
-                                        onClick={() => handleClick(star)}
+                                        onClick={() => handleClick(recipe.id ,star)}
                                     >
-                                        {rate >= star ? (
+                                        {ratings[recipe.id] >= star ? (
                                             <BiSolidStar color="gold" />
                                         ) : (
                                             <CiStar />
@@ -86,18 +94,18 @@ export default function Breakfast() {
                                 ))}
                         </div>
                             <div className="rating-display">
-                                Rating: (<span id="rating-value">{rate}</span>)
+                            Rating: (<span id="rating-value">{ratings[recipe.id] || 0}</span>)
                             </div>
                     </div>
 
                     <div class="mb-4 d-flex justify-content-around wsbtn">
                     <div> <button class="btn btn-primary">view details</button></div>
-                        <div> <a><CiBookmarkPlus /> </a>
+                        <div> <a href='*'><CiBookmarkPlus /> </a>
                         </div>
                     </div>
                 </div>
             </div>
-
+      ))}
 
 
 
