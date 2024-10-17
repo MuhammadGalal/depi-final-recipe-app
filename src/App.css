@@ -1035,6 +1035,69 @@ img {
   transition: .5s ease;
 }
 
+
+
+/* <----------------------profile-page-------------------> */
+
+#img-profi {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #48cb57;
+}
+
+.uploud-profi-img {
+  margin-left: 4rem;
+}
+
+.profi-det {
+  display: flex;
+  gap: 2rem;
+}
+
+.profi-det-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+}
+
+.profi-det-c h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.profi-det-email-c {
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+
+.profi-det-email-c h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.links-profi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.follow h4{
+  font-weight: 500;
+  color: gray;
+}
+
+.comment-profi {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 2rem;
+}
+
+
 /* mo'men updates */
 /* salah updates */
 
