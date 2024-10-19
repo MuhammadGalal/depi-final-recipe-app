@@ -1,0 +1,92 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  /* General styling */
+  body {
+    background-color: #f8f9fa;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .mealCard {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mealCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  /* Button styling */
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  /* Loading Button */
+  .loading-button {
+    margin-top: 20px;
+  }
+  
+  .loading-button button {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .loading-button button:disabled {
+    background-color: #6c757d;
+  }
+  
+  /* Form styling */
+  .form-control {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Container */
+  .mealPlan {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mealInfo {
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mealInfo:hover {
+    transform: translateY(-5px);
+  }
+  

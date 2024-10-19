@@ -4,6 +4,7 @@ import CustomNavbar from './components/customNavbar';
 import MainContent from './components/mainContent';
 import LoginPage from './pages/LoginPage';
 import CreateAccount from './pages/CreateAcountPage';
+import PlanPage from './pages/plan';
 import Footer from './components/footer';
 import MomenPage from './components/MomenPage';
 import GalalPage from './components/GalalPage';
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<MainContent />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/create-account' element={<CreateAccount />} />
+          <Route path='/plan' element={<PlanPage />} />
           <Route path='/breakfast' element={<Breakfast />} />
           <Route path='/lunch' element={<Lunch />} />
           <Route path='/dinner' element={<Dinner />} />

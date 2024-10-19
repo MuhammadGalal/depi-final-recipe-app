@@ -27,7 +27,7 @@ const categoryNavigate = useNavigate()
             <Card>
               <Card.Img className="img-box" variant="top" src="breakfast.jpg" />
               <Card.Body>
-                <Card.Title>Avocado Toast</Card.Title>
+                <Card.Title style={{textAlign: 'center'}}>Breakfast</Card.Title>
                 {/* <Card.Text>
                   Wake up to flavor with Avocado <br />
                   Toast with Roasted Tomatoes! <br />
@@ -45,7 +45,7 @@ const categoryNavigate = useNavigate()
             <Card>
               <Card.Img className="img-box" variant="top" src="lunch.jpg" />
               <Card.Body>
-                <Card.Title>Salmon Rice Bowls</Card.Title>
+                <Card.Title style={{textAlign: 'center'}}>Lunch</Card.Title>
                 {/* <Card.Text>
                   These easy Salmon Rice Bowls <br />
                   have become a healthy and <br />
@@ -63,7 +63,7 @@ const categoryNavigate = useNavigate()
             <Card>
               <Card.Img className="img-box" variant="top" src="dinner.jpg" />
               <Card.Body>
-                <Card.Title>Mixed Dish</Card.Title>
+                <Card.Title style={{textAlign: 'center'}}>Dinner</Card.Title>
                 {/* <Card.Text>
                   I can't tell which cheese it is but <br />
                   it looks like cameber or aged <br />
@@ -81,7 +81,7 @@ const categoryNavigate = useNavigate()
             <Card>
               <Card.Img className="img-box" variant="top" src="desserts.jpg" />
               <Card.Body>
-                <Card.Title>Cheesecake</Card.Title>
+                <Card.Title style={{textAlign: 'center'}}>Desserts</Card.Title>
                 {/* <Card.Text>
                   This New York-style cheesecake <br />
                   is rich, dense yet creamy and <br />

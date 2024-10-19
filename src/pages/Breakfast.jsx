@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { CiBookmarkPlus} from "react-icons/ci";
+// import { CiBookmarkPlus} from "react-icons/ci";
 import { CiStar } from "react-icons/ci";
-import { BiSolidStar } from "react-icons/bi";
+import { BiHeart, BiSolidStar } from "react-icons/bi";
 
 export default function Breakfast() {
     const [ratings, setRatings] = useState({});
@@ -100,7 +100,8 @@ export default function Breakfast() {
 
                     <div class="mb-4 d-flex justify-content-around wsbtn">
                     <div> <button class="btn btn-primary">view details</button></div>
-                        <div> <a href='*'><CiBookmarkPlus /> </a>
+                        <div> <a href='*'><BiHeart />
+                        </a>
                         </div>
                     </div>
                 </div>

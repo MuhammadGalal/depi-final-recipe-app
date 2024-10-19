@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {  useNavigate } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 // import "./KetoMeals.css"; // Custom CSS for animations and styling
 
@@ -52,6 +53,7 @@ const KetoMeals = () => {
   const handleMouseLeave = () => {
     setActiveMeal(defaultMeal); // Reset to default text when the mouse leaves
   };
+const navigate = useNavigate()
 
   return (
     <Container className="mainContainer">
@@ -88,7 +90,7 @@ const KetoMeals = () => {
           )}
         </Col>
       </Row>
-      <button type="button" class="btn btn-primary btn-lg btn-block w-100 mt-3">
+       <button onClick={()=> navigate('/plan')} type="button" class="btn btn-primary btn-lg btn-block w-100 mt-3">
         plan your meals now!
       </button>
     </Container>
@@ -96,3 +98,4 @@ const KetoMeals = () => {
 };
 
 export default KetoMeals;
+// onClick={()=> nav("/plan")}

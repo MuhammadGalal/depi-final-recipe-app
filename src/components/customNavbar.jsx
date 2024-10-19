@@ -38,7 +38,7 @@ function CustomNavbar() {
           <Navbar.Toggle onClick={handleShow} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#plan">Plan</Nav.Link>
+              <Nav.Link onClick={()=> navigate('/plan')}>Plan</Nav.Link>
             </Nav>
             <Nav className='me-2'>
               <Nav.Link href="#search">
@@ -78,7 +78,7 @@ function CustomNavbar() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="#plan">Plan</Nav.Link>
+            <Nav.Link onClick={()=> navigate('/plan')}>Plan</Nav.Link>
             <Nav.Link href="#search">
               <BsSearch /> Search
             </Nav.Link>

@@ -314,6 +314,9 @@ img {
   cursor: pointer;
   
 }
+.wsbtn {
+  align-items: center !important;
+}
 /* salah breakfast update */
 
 
