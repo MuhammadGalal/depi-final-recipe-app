@@ -43,7 +43,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="galal.jpg" alt="Mohamed Galal" className="product--image" />
+            <img src="Galal.jpg" alt="Mohamed Galal" className="product--image" />
             <h2>Mohamed Galal</h2>
             <button
               onClick={() => navigaterev("/galalpage")}
@@ -73,7 +73,7 @@ function MainContentReviews() {
             </button>
           </div>
           <div className="card-review">
-            <img src="salah.jpg" alt="Mohamed salah" className="product--image" />
+            <img src="Salah.jpg" alt="Mohamed salah" className="product--image" />
             <h2>Mohamed salah</h2>
             <button
               onClick={() => navigaterev("/salahpage")}
