@@ -71,7 +71,7 @@ const categoryNavigate = useNavigate()
                   walnuts, peaches, and some <br />
                   type of glaze.
                 </Card.Text> */}
-                <Button className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
+                <Button onClick={()=> categoryNavigate('/dinner')} className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
                   See Dinner recipes
                 </Button>
               </Card.Body>
@@ -89,7 +89,7 @@ const categoryNavigate = useNavigate()
                   the sweet base, you want to <br />
                   impress!
                 </Card.Text> */}
-                <Button className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
+                <Button onClick={()=> categoryNavigate('/dessert')} className="boxes-btn" variant="secondary" style={{ width: "100%" }}>
                   See Desserts recipes
                 </Button>
               </Card.Body>

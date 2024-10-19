@@ -3,7 +3,7 @@ import { CiBookmarkPlus} from "react-icons/ci";
 import { CiStar } from "react-icons/ci";
 import { BiSolidStar } from "react-icons/bi";
 
-export default function Breakfast() {
+export default function Dinner() {
     const [ratings, setRatings] = useState({});
     const [recipes, setRecipes] = useState([])
 
@@ -15,7 +15,7 @@ export default function Breakfast() {
     };
 
     useEffect(()=> {
-        fetch('http://localhost:3001/breakfast')
+        fetch('http://localhost:3001/dinner')
         .then(res=> res.json())
         .then((data) => {
             setRecipes(data)
@@ -64,7 +64,7 @@ export default function Breakfast() {
                  <div className="cover-img">
                     <img src="https://imageplaceholder.net/600x400" alt="pic here" />
                 </div>
-        <h1 class="text-center">Breakfast recipes</h1>
+        <h1 class="text-center">Dinner recipes</h1>
         <div class="container py-5">
         <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
 
