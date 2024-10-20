@@ -5,6 +5,7 @@ import MainContent from './components/mainContent';
 import LoginPage from './pages/LoginPage';
 import CreateAccount from './pages/CreateAcountPage';
 import PlanPage from './pages/plan';
+import TopRatedMeal from './pages/TopRatedMeal';
 import Footer from './components/footer';
 import MomenPage from './components/MomenPage';
 import GalalPage from './components/GalalPage';
@@ -37,6 +38,7 @@ function App() {
           <Route path='/lunch' element={<Lunch />} />
           <Route path='/dinner' element={<Dinner />} />
           <Route path='/dessert' element={<Desserts />} />
+          <Route path='/top-meals/:id' element={<TopRatedMeal />} />
           <Route path="/profile/:userId" element={<ProfilePage />} />
           <Route path='/favorites' element={<FavoritesPage />} /> {/*Mo'men update*/}
           <Route path='/momenpage' element={<MomenPage />} /> {/*Mo'men update*/}

@@ -1,32 +1,97 @@
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { Link } from "react-router-dom";
 export default function Top5Meals() {
+
+    const [recipe, setRecipe] = useState(null)
+    const [recipeBreakfast, setRecipeBreakfast] = useState(null)
+    const [recipeDinner, setRecipeDinner] = useState(null)
+    const [recipeDessert, setRecipeDessert] = useState(null)
+    // const navigate = useNavigate()
+
+    useEffect(()=> {
+        fetch('http://localhost:3001/lunch')
+        .then(res=> res.json())
+        .then((data)=> {
+            const random = Math.floor(Math.random() * data.length);
+            setRecipe(data[random])
+        })
+    },[])
+    useEffect(()=> {
+        fetch('http://localhost:3001/breakfast')
+        .then(res=> res.json())
+        .then((data)=> {
+            const random = Math.floor(Math.random() * data.length);
+            setRecipeBreakfast(data[random])
+        })
+    },[])
+    useEffect(()=> {
+        fetch('http://localhost:3001/dinner')
+        .then(res=> res.json())
+        .then((data)=> {
+            const random = Math.floor(Math.random() * data.length);
+            setRecipeDinner(data[random])
+        })
+    },[])
+    useEffect(()=> {
+        fetch('http://localhost:3001/dessert')
+        .then(res=> res.json())
+        .then((data)=> {
+            const random = Math.floor(Math.random() * data.length);
+            setRecipeDessert(data[random])
+        })
+    },[])
+
     return(
     <>
     <Container>
                 <h1 className="section-header">Top rated meals</h1>
         <div className="meals-container">
-                <div to="top-rated-meal" className="top-meals-left-col">
-                    <Link to="top-rated-meal"><h2>Chicken Tinga Tacos</h2> </Link>
-                </div>
+             
+                
 
+                {recipe ? (
+
+             
+                <div className="top-meals-left-col">
+                    {/* <img src={recipe.image} alt="" /> */}
+                    <Link to={`/top-meals/${recipe.id}`}><h2>{recipe.title}</h2> </Link>
+                </div>
+                    ):
+                    <img src="" alt="" />
+                    }
+                   
                 <div className="top-meals-right-col">
+                    {recipeBreakfast ? (
+
                     <div className="top-1-meal">
-                        <Link> <h2>Sunday Chili</h2></Link>
+                        <Link to={`/top-meals/${recipeBreakfast.id}`}> <h2>{recipeBreakfast.title}</h2></Link>
                         
                     </div>
+                    ): <img src="" alt="" /> }
+
+                    {recipeDinner ? (
+
                     <div className="top-2-meal">
-                        <Link> <h2>Chicken Burgers with Kimchi Bacon Jam</h2></Link>
+                        <Link to={`/top-meals/${recipeDinner.id}`}><h2>{recipeDinner.title}</h2></Link>
                         
                     </div>
+                    ): <img src="" alt="" />}
+                    {recipeDessert ? (
+
                     <div className="top-3-meal">
-                        <Link> <h2>Spicy Peanut Soup with Sweet Potato</h2></Link>
+                        <Link to={`/top-meals/${recipeDessert.id}`}><h2>{recipeDessert.title}</h2></Link>
                         
                     </div>
-                    <div className="top-4-meal">
-                        <Link> <h2>Unbelievably Good Cashew Coffee</h2></Link>
+                    ):<img src="" alt="" />}
+                    {recipe ? (
+                        <div className="top-4-meal">
+                        <Link to={`/top-meals/${recipe.id}`}>  <h2>{recipe.title}</h2></Link>
                         
                     </div>
+
+                    ): <img src="" alt="" /> }
+                    
                 </div>
         </div>
     </Container>

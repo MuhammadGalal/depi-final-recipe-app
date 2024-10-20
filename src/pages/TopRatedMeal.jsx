@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -11,6 +13,39 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { Link } from "react-router-dom";
 export default function TopRatedMeal() {
+  const { id } = useParams();
+  const [recipe, setRecipe] = useState([])
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    fetch(`http://localhost:3001/lunch/${id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      setRecipe(data);
+    })
+}, [id])
+useEffect(() => {
+fetch(`http://localhost:3001/breakfast/${id}`)
+.then((res) => res.json())
+.then((data) => {
+  setRecipe(data);
+})
+}, [id])
+useEffect(() => {
+fetch(`http://localhost:3001/dinner/${id}`)
+.then((res) => res.json())
+.then((data) => {
+  setRecipe(data);
+})
+}, [id])
+useEffect(() => {
+fetch(`http://localhost:3001/dessert/${id}`)
+.then((res) => res.json())
+.then((data) => {
+  setRecipe(data);
+})
+}, [id])
+
   return (
     <>
       <Container className="top-rated-meal">
@@ -21,7 +56,7 @@ export default function TopRatedMeal() {
           </h1>
           <div className="meal-container">
             <div className="top-rated-meal-col-left">
-              <h2 className="recipe-header">Chicken Tinga Tacos</h2>
+              <h2 className="recipe-header">{recipe.title}</h2>
               <div className="rate-share">
                 <div className="rate">
                   <i className="rating-star">
@@ -54,11 +89,12 @@ export default function TopRatedMeal() {
                 </div>
               </div>
               <p className="recipe-bio">
-                Chicken Tinga Tacos – the only chicken tinga tacos recipe you
+                {/* Chicken Tinga Tacos – the only chicken tinga tacos recipe you
                 will ever need! Spicy, saucy, simple, and so fresh. Recipe is
                 posted with permission from The Minimalist Kitchen (affiliate
                 link) cookbook (although I’ve taken the liberty of adding “The
-                Best” as a necessary recipe title prefix).
+                Best” as a necessary recipe title prefix). */}
+                {recipe.description}
               </p>
               <div className="recipe-time">
                 <div>
@@ -92,9 +128,9 @@ export default function TopRatedMeal() {
                 Ingredients
                 <div className="curved-line"></div>
               </h4>
-              <p className="recipe-name">Chicken Tinga Tacos:</p>
+              <p className="recipe-name">{recipe.title}</p>
               <div className="recipe-content">
-                <p>- 1 tablespoon olive oil</p>
+                <p>- {recipe.description}</p>
                 <p>- 1 cup roughly chopped sweet onion</p>
                 <p>- 2 cloves garlic, minced</p>
                 <p>- 1–2 chipotle peppers in adobo sauce, chopped</p>
