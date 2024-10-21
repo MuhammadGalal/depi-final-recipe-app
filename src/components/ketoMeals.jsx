@@ -90,7 +90,7 @@ const navigate = useNavigate()
           )}
         </Col>
       </Row>
-       <button onClick={()=> navigate('/plan')} type="button" class="btn btn-primary btn-lg btn-block w-100 mt-3">
+       <button onClick={()=> navigate('/plan')} type="button" className="btn btn-primary btn-lg btn-block w-100 mt-3">
         plan your meals now!
       </button>
     </Container>

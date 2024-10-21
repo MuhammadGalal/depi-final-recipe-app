@@ -113,10 +113,10 @@ fetch(`http://localhost:3001/dessert/${id}`)
             </div>
             <div className="top-rated-meal-col-right">
               <div className="meal-photo">
-                {/* <img
-                  src="https://eadn-wc05-5516459.nxedge.io/wp-content/uploads/2021/09/04_Frys_Tacos_L.jpg"
+                <img
+                  src={recipe.image}
                   alt=""
-                /> */}
+                />
               </div>
             </div>
           </div>

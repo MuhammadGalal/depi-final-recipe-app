@@ -136,34 +136,4 @@ export default function ProfilePage() {
     </div>
   </Container>;
 
-
-  // <div className="profile">
-  //   <div className="profile-header">
-  //     <img
-  //       src={newImage || user.profileImage}
-  //       alt=""
-  //     />
-  //     <h5>Upload an Image</h5>
-  //     <input type="file" accept="image/*"  onChange={handleImageUpload}
-  //      />
-  //     <h5>Full Name: {user.firstName + ' ' + user.lastName}</h5>
-  //     <h5>Email: {user.email}</h5>
-  //   </div>
-  //   <div className="comments">
-  //     <h2>Comments</h2>
-  //     {comments.length > 0 ? (
-  //       <ul>
-  //         {comments.map((comment) => (
-  //           <li key={comment.id}>{comment.text}</li>
-  //         ))}
-  //       </ul>
-  //     ) : (
-  //       <p>No comments made yet.</p>
-  //     )}
-  //   </div>
-  // </div>
-
-
-
-
 }

@@ -5,21 +5,28 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BsHeart , BsFillPersonFill, BsSearch } from 'react-icons/bs';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Modal } from 'react-bootstrap';
 import { useUser } from '../context/UserContext';
+import { useSearch } from '../context/SearchContext';
 
 function CustomNavbar() {
   const { user, setUser } = useUser() 
   const [show, setShow] = useState(false);
+  const { search, setSearch } = useSearch();
+  const [showSearch, setShowSearch] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const navigate = useNavigate()
 
+
   const handleLogout = () => {
     setUser(null); 
     navigate('/')
   };
+  const handleSearchClose = () => setShowSearch(false);
+  const handleSearchShow = () => setShowSearch(true);
 
   return (
     <>
@@ -41,7 +48,7 @@ function CustomNavbar() {
               <Nav.Link onClick={()=> navigate('/plan')}>Plan</Nav.Link>
             </Nav>
             <Nav className='me-2'>
-              <Nav.Link href="#search">
+              <Nav.Link onClick={handleSearchShow}>
                 <BsSearch />
               </Nav.Link>
               {user ? (
@@ -71,6 +78,20 @@ function CustomNavbar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Modal show={showSearch} onHide={handleSearchClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Search Recipe</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <input
+                        type="text"
+                        placeholder="Search recipe"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        className="form-control"
+                    />
+                </Modal.Body>
+            </Modal>
 
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
@@ -79,7 +100,7 @@ function CustomNavbar() {
         <Offcanvas.Body>
           <Nav className="flex-column">
             <Nav.Link onClick={()=> navigate('/plan')}>Plan</Nav.Link>
-            <Nav.Link href="#search">
+            <Nav.Link onClick={handleSearchShow}>
               <BsSearch /> Search
             </Nav.Link>
             {user ? (

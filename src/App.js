@@ -20,14 +20,20 @@ import Dinner from './pages/Dinner';
 import Desserts from './pages/Desserts';
 import ProfilePage from './pages/ProfilePage';
 import { UserProvider } from './context/UserContext';
+import { SearchProvider } from './context/SearchContext';
+import { FavoritesProvider } from './context/FavoritesContext';
 
 
 
 function App() {
   return (
     <>
+    
     <UserProvider>
+    
       <Router>
+      <SearchProvider>
+      <FavoritesProvider>
         <CustomNavbar />
         <Routes>
           <Route path='/' element={<MainContent />} />
@@ -49,6 +55,9 @@ function App() {
           <Route path='/hossampage' element={<HossamPage />} /> {/*Mo'men update*/}
         </Routes>
         <Footer /> {/* salah update */}
+        </FavoritesProvider>
+        </SearchProvider>
+        
       </Router>
       </UserProvider>
     </>

@@ -73,229 +73,257 @@
       "password": "a123456a"
     }
   ],
-  "breakfast": [ 
+  "breakfast": [
     {
-      "id": "544sd",
-      "title": "recipe -one",
-      "description" : "description-one",
-      "image" : "https://placehold.co/400"
+      "id": "5q44sd",
+      "title": "Avocado Toast",
+      "description": "Creamy avocado spread on toasted bread, topped with cherry tomatoes and a sprinkle of salt.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3XBYtIP4HzjUe7SH6w0d_ly-SBfqmMsBEA&s"
     },
     {
-      "id": "544ddsd",
-      "title": "recipe -two",
-      "description" : "description-two",
-      "image" : "https://placehold.co/400"
+      "id": "54w4ddsd",
+      "title": "Banana Pancakes",
+      "description": "Fluffy pancakes made with ripe bananas, perfect for a sweet morning treat.",
+      "image": "https://images.mrcook.app/recipe-image/019257bf-1143-7438-97e9-9ae815d1363d"
     },
     {
-      "id": "544sasd",
-      "title": "recipe -three",
-      "description" : "description-three",
-      "image" : "https://placehold.co/400"
+      "id": "54e4sasd",
+      "title": "Greek Yogurt Parfait",
+      "description": "Layers of Greek yogurt, granola, and fresh berries for a nutritious start.",
+      "image": "https://www.beyondthechickencoop.com/wp-content/uploads/2023/05/Greek-Yogurt-Berry-Parfait-4-500x500.jpg"
     },
     {
-      "id": "544sasd",
-      "title": "recipe -four",
-      "description" : "description-four",
-      "image" : "https://placehold.co/400"
+      "id": "5r44sasd",
+      "title": "Oatmeal with Fruits",
+      "description": "Warm oatmeal topped with fresh fruits, nuts, and a drizzle of honey.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWEMxjjCNIzEmanahm_o-2pPd73zKo4TLWmg&s"
     },
     {
-      "id": "544sasd",
-      "title": "recipe -five",
-      "description" : "description-five",
-      "image" : "https://placehold.co/400"
+      "id": "5t44sasd",
+      "title": "Smoothie Bowl",
+      "description": "A thick smoothie served in a bowl, topped with granola, nuts, and fruits.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtXEY-UTwVZRSSbJghGexBjnHmb7JoI0ZRg&s"
     },
     {
-      "id": "544sasd",
-      "title": "recipe -six",
-      "description" : "description-six",
-      "image" : "https://placehold.co/400"
+      "id": "5y44sasd",
+      "title": "Egg and Spinach Breakfast Wrap",
+      "description": "Scrambled eggs with sautéed spinach wrapped in a whole-grain tortilla.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaobzY7XTx1byaZXL-ujsqTgWk2WqflRcV1g&s"
     }
-  ], 
-    "lunch": [
-      {
-        "id": "dn212snf",
-        "title": "recipe -six-4",
-        "description" : "description -six-4",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dn544snf",
-        "title": "recipe -six- d",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dns1122nf",
-        "title": "recipe -six",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dn55422145snf",
-        "title": "recipe -six-5",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dns55645nf",
-        "title": "recipe -six-12",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dn55snf",
-        "title": "recipe -six -one",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dnl887lllsnf",
-        "title": "recipe -six- two",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "ddffdfddfnsnf",
-        "title": "recipe -six- three",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      },
-      {
-        "id": "dnsfddfdfnf",
-        "title": "recipe -six- four",
-        "description" : "description-five",
-        "image" : "https://placehold.co/400"
-      }
-    ],
-  "dinner" : [
+  ],
+  "lunch": [
     {
-      "id": "ncvbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dun212snf",
+      "title": "Quinoa Salad",
+      "description": "A refreshing salad with quinoa, cucumbers, tomatoes, and a lemon vinaigrette.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx73OZIm9TqywMBmZFdZTWPMAJdZ7QKbgddw&s"
     },
     {
-      "id": "n997cvbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dni544snf",
+      "title": "Caprese Sandwich",
+      "description": "Fresh mozzarella, basil, and tomatoes drizzled with balsamic glaze on crusty bread.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyM5mnjIHYQJ7i_--GGZlQ0j8P6QMc8x71fw&s"
     },
     {
-      "id": "ncvbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dnos1122nf",
+      "title": "Vegetable Stir-Fry",
+      "description": "Colorful stir-fried vegetables in a savory soy sauce, served over rice or noodles.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgzhGx6kwwdbUrOl-t81xROsDl_nPYbNZ_Jw&s"
     },
     {
-      "id": "ndddcvbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dpn55422145snf",
+      "title": "Chicken Caesar Salad",
+      "description": "Crisp romaine lettuce, grilled chicken, croutons, and Caesar dressing.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVItSG0F02K7S9bFjwSz098u68ZFm0IOGiQ&s"
     },
     {
-      "id": "ncvassbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dans55645nf",
+      "title": "Tuna Salad Wrap",
+      "description": "Tuna mixed with mayonnaise and veggies, wrapped in a tortilla.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB30hs9a7F2lW3wJZkGD6yPlIqvfWFqeXa5A&s"
     },
     {
-      "id": "ncv114bbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dsn55snf",
+      "title": "Minestrone Soup",
+      "description": "A hearty vegetable soup with pasta and beans, flavored with herbs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45esMhhMNLTvhs3eF4_Lde5tyvzEVb6fZ5g&s"
     },
     {
-      "id": "ncffhjh2vbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dndl887lllsnf",
+      "title": "Falafel Bowl",
+      "description": "Crispy falafel served over rice or greens with tahini sauce and veggies.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaulbMkIHKhk2bjoMW4qoZcdTzBTq71CAo1A&s"
     },
     {
-      "id": "ncvb320bn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
-    },
-    {
-      "id": "nfdf12cvbbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
-    },
-    {
-      "id": "ncf545v5565bbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
-    },
-    {
-      "id": "nc7s7fvbdfdbn",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "dgnsfddfdfnf",
+      "title": "Stuffed Bell Peppers",
+      "description": "Bell peppers filled with quinoa, black beans, corn, and spices.",
+      "image": "https://i0.wp.com/www.imbored-letsgo.com/wp-content/uploads/2021/08/Quinoa-Black-Bean-Corn-Stuffed-Bell-Peppers.jpg?ssl=1"
     }
-    
-  ], 
+  ],
+  "dinner": [
+    {
+      "id": "ncvhbbn",
+      "title": "Chicken Alfredo Pasta",
+      "description": "Creamy Alfredo sauce tossed with fettuccine and grilled chicken, garnished with parsley.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiAP468Nif0Ap6c0A1sBDniODvg6Mvl7KAAw&s"
+    },
+    {
+      "id": "n997jcvbbn",
+      "title": "Baked Salmon",
+      "description": "Salmon fillet baked with lemon and herbs, served with roasted vegetables.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZ9IcC9QNU_na9dWcX-PveILUAdetca0pDQ&s"
+    },
+    {
+      "id": "ncvblbn",
+      "title": "Vegetable Curry",
+      "description": "A fragrant curry made with mixed vegetables and coconut milk, served with rice.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8HkMt967zIm5huenTVta0apHx5lIxo_Gog&s"
+    },
+    {
+      "id": "nddzdcvbbn",
+      "title": "Stuffed Chicken Breast",
+      "description": "Chicken breast stuffed with spinach and cheese, baked to perfection.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmuGbTE9PkSNxFXHatJ2klM1a4HdzF6-rCSg&s"
+    },
+    {
+      "id": "ncvxassbbn",
+      "title": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta dish with a rich meat sauce.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwdAO1O1uOXyZdS3gG7QnJl4YhfmugY8INw&s"
+    },
+    {
+      "id": "ncvc114bbn",
+      "title": "Grilled Shrimp Skewers",
+      "description": "Marinated shrimp grilled on skewers, served with a zesty sauce.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOTd8pBMexdEaG2hKKO9iGMelWk9x91hKAYw&s"
+    },
+    {
+      "id": "ncfvfhjh2vbbn",
+      "title": "Vegetable Lasagna",
+      "description": "Layers of pasta, cheese, and vegetables baked in marinara sauce.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uoB-YHog6lCsblaWdYWc4A6fnPFH85u_2g&s"
+    },
+    {
+      "id": "ncvbb320bn",
+      "title": "Chili Con Carne",
+      "description": "Hearty chili made with ground beef, beans, and spices, served with cornbread.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStQ5FK0c-f0j6q7Ii_ohQni3T2dgGj0rEUVw&s"
+    }
+  ],
   "dessert": [
     {
-      "id": "qw1222sds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qw12222sds5454",
+      "title": "Chocolate Chip Cookies",
+      "description": "Classic cookies loaded with chocolate chips, crispy on the outside and chewy on the inside.",
+      "image": "https://www.smalltownwoman.com/wp-content/uploads/2023/12/Chewy-Chocolate-Chip-Cookies-4x5-1.jpg"
     },
     {
-      "id": "qwsds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwsds53454",
+      "title": "Cheesecake",
+      "description": "Rich and creamy cheesecake on a graham cracker crust, topped with fresh fruit.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzVWNijcV2QrC8sQfLb8VI1YS-jtf8Duo3vQ&s"
     },
     {
-      "id": "qwf895sds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwf8965sds5454",
+      "title": "Apple Crisp",
+      "description": "Warm baked apples topped with a crunchy oat topping, served with vanilla ice cream.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNDBkNeDXZf3xqrIXCO8BlDvuSdA87NqYZQ&s"
     },
     {
-      "id": "qwsgfgds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwsgf5gds5454",
+      "title": "Brownies",
+      "description": "Fudgy chocolate brownies that are rich and decadent, perfect for chocolate lovers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-81dy8Md3bI8x_fiy7b_vd5sBjYwve5pADw&s"
     },
     {
-      "id": "qws445ds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qws4445ds5454",
+      "title": "Tiramisu",
+      "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImO0ZQveUjQJZHwP1dVCCLH2rPN8ay_Vvnw&s"
     },
     {
-      "id": "qwsg55ds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwsg955ds5454",
+      "title": "Panna Cotta",
+      "description": "Silky smooth Italian dessert made with cream and vanilla, often topped with fruit.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcw-3aw5Ax7iIiBlRInZ0vSFUUibAC39IIeg&s"
     },
     {
-      "id": "qwsfgds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwsf8gds5454",
+      "title": "Lemon Meringue Pie",
+      "description": "Tart lemon filling topped with fluffy meringue, all in a flaky pie crust.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmdOhUNmnDOgQss6acqRkJczIFlzIkA4kVTQ&s"
     },
     {
-      "id": "qwdddsds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "qwdddsd7s5454",
+      "title": "Fruit Salad",
+      "description": "A refreshing mix of seasonal fruits, perfect for a light dessert.",
+      "image": "https://placehold.co/400"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "8cbd",
+      "userId": "8bf6",
+      "recipeId": "5r44sasd",
+      "title": "recipe -four",
+      "description": "description-four",
+      "image": "https://placehold.co/400",
+      "rating": 0
     },
     {
-      "id": "qaaawsds5454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "e0ec",
+      "userId": "8bf6",
+      "recipeId": "54e4sasd",
+      "title": "recipe -three",
+      "description": "description-three",
+      "image": "https://placehold.co/400",
+      "rating": 0
     },
     {
-      "id": "qwsds5sdd454",
-      "title": "recipe -sixtenn",
-      "description" : "description-five",
-     "image" : "https://placehold.co/400"
+      "id": "baa5",
+      "userId": "8bf6",
+      "recipeId": "5r44sasd",
+      "title": "recipe -four",
+      "description": "description-four",
+      "image": "https://placehold.co/400",
+      "rating": 4
+    },
+    {
+      "id": "5009",
+      "userId": "b03d",
+      "recipeId": "5q44sd",
+      "title": "Avocado Toast",
+      "description": "Creamy avocado spread on toasted bread, topped with cherry tomatoes and a sprinkle of salt.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3XBYtIP4HzjUe7SH6w0d_ly-SBfqmMsBEA&s",
+      "rating": 0
+    },
+    {
+      "id": "6380",
+      "userId": "b03d",
+      "recipeId": "54w4ddsd",
+      "title": "Banana Pancakes",
+      "description": "Fluffy pancakes made with ripe bananas, perfect for a sweet morning treat.",
+      "image": "https://images.mrcook.app/recipe-image/019257bf-1143-7438-97e9-9ae815d1363d",
+      "rating": 0
+    },
+    {
+      "id": "81c5",
+      "userId": "b03d",
+      "recipeId": "dun212snf",
+      "title": "Quinoa Salad",
+      "description": "A refreshing salad with quinoa, cucumbers, tomatoes, and a lemon vinaigrette.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx73OZIm9TqywMBmZFdZTWPMAJdZ7QKbgddw&s",
+      "rating": 0
+    },
+    {
+      "id": "0dad",
+      "userId": "b03d",
+      "recipeId": "dni544snf",
+      "title": "Caprese Sandwich",
+      "description": "Fresh mozzarella, basil, and tomatoes drizzled with balsamic glaze on crusty bread.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyM5mnjIHYQJ7i_--GGZlQ0j8P6QMc8x71fw&s",
+      "rating": 0
     }
   ]
 }

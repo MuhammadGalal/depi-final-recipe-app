@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { Link } from "react-router-dom";
@@ -55,7 +56,10 @@ export default function Top5Meals() {
              
                 <div className="top-meals-left-col">
                     {/* <img src={recipe.image} alt="" /> */}
-                    <Link to={`/top-meals/${recipe.id}`}><h2>{recipe.title}</h2> </Link>
+                    <Link to={`/top-meals/${recipe.id}`}>
+                        <h2>{recipe.title}</h2>
+                        <img style={{width: "100%"}} src={recipe.image} alt="" />
+                     </Link>
                 </div>
                     ):
                     <img src="" alt="" />
@@ -64,29 +68,41 @@ export default function Top5Meals() {
                 <div className="top-meals-right-col">
                     {recipeBreakfast ? (
 
-                    <div className="top-1-meal">
-                        <Link to={`/top-meals/${recipeBreakfast.id}`}> <h2>{recipeBreakfast.title}</h2></Link>
+                    <div className="top-1-meal top-meal">
+                        <Link to={`/top-meals/${recipeBreakfast.id}`}>
+                            <h2>{recipeBreakfast.title}</h2>
+                            <img style={{width: "100%"}} src={recipeBreakfast.image} alt=""/>
+                        </Link>
                         
                     </div>
                     ): <img src="" alt="" /> }
 
                     {recipeDinner ? (
 
-                    <div className="top-2-meal">
-                        <Link to={`/top-meals/${recipeDinner.id}`}><h2>{recipeDinner.title}</h2></Link>
+                    <div className="top-2-meal top-meal">
+                        <Link to={`/top-meals/${recipeDinner.id}`}>
+                            <h2>{recipeDinner.title}</h2>
+                            <img style={{width: "100%"}} src={recipeDinner.image} alt=""/>
+                        </Link>
                         
                     </div>
                     ): <img src="" alt="" />}
                     {recipeDessert ? (
 
-                    <div className="top-3-meal">
-                        <Link to={`/top-meals/${recipeDessert.id}`}><h2>{recipeDessert.title}</h2></Link>
+                    <div className="top-3-meal top-meal">
+                        <Link to={`/top-meals/${recipeDessert.id}`}>
+                            <h2>{recipeDessert.title}</h2>
+                            <img style={{width: "100%"}} src={recipeDessert.image} alt=""/>
+                        </Link>
                         
                     </div>
                     ):<img src="" alt="" />}
                     {recipe ? (
-                        <div className="top-4-meal">
-                        <Link to={`/top-meals/${recipe.id}`}>  <h2>{recipe.title}</h2></Link>
+                        <div className="top-4-meal top-meal">
+                        <Link to={`/top-meals/${recipe.id}`}>
+                            <h2>{recipe.title}</h2>
+                            <img style={{width: "100%"}} src={recipe.image} alt=""/>
+                        </Link>
                         
                     </div>
 

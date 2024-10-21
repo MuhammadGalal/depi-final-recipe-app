@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
-import { CiBookmarkPlus} from "react-icons/ci";
 import { CiStar } from "react-icons/ci";
-import { BiSolidStar } from "react-icons/bi";
+import { BiHeart, BiSolidStar } from "react-icons/bi";
+import { useSearch } from "../context/SearchContext";
+import { useFavorites } from "../context/FavoritesContext";
+import { useUser } from "../context/UserContext"; 
 
 export default function Desserts() {
-    const [ratings, setRatings] = useState({});
+    const [ratings, setRatings] = useState({})
     const [recipes, setRecipes] = useState([])
+    const { search } = useSearch()
+    const { favorites, addFavorite, removeFavorite } = useFavorites()
+    const { user } = useUser(); 
+
 
     const handleClick = (recipeId, val) => {
         setRatings(prevRate => ({
@@ -13,6 +19,39 @@ export default function Desserts() {
             [recipeId]: val,
         }));
     };
+    const toggleFavorite = (recipe) => {
+        if (favorites.some(fav => fav.id === recipe.id)) {
+            removeFavorite(recipe.id)
+        } else {
+            addFavorite(recipe)
+        }
+    };
+    const handleAddFavorite = (recipe) => {
+        if (!user) {
+            alert("Please log in to add favorites.");
+            return;
+        }
+
+        fetch('http://localhost:3001/favorites', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                userId: user.id,
+                recipeId: recipe.id,
+                title: recipe.title,
+                description: recipe.description,
+                image: recipe.image,
+                rating: ratings[recipe.id] || 0,
+            }),
+        })
+            .then(res => res.json())
+            .then(data => {
+                addFavorite(data);
+            })
+    };
+
 
     useEffect(()=> {
         fetch('http://localhost:3001/dessert')
@@ -22,6 +61,11 @@ export default function Desserts() {
         })
 
     },[])
+
+    const filterRecipe = recipes.filter(recipe => 
+        recipe.title.toLowerCase().includes(search.toLowerCase())
+    );
+
 
     return (
         <>
@@ -61,59 +105,52 @@ export default function Desserts() {
                     </div>
                 </div>
             </div> */}
-                 <div className="cover-img">
-                    <img src="https://imageplaceholder.net/600x400" alt="pic here" />
-                </div>
-        <h1 class="text-center">Desserts recipes</h1>
-        <div class="container py-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-
-
-        {recipes.map(recipe => (
-            <div class="col" key={recipe.id}>
-                <div class="card pdcard">
-                    <img src={recipe.image} class="card-img-top" alt="pic for the recipe"/>
-                    <div class="card-body pdcardbody">
-                        <h5 class="card-title">{recipe.title}</h5>
-                        <p class="card-text">{recipe.description}</p>
-                    </div>
-                    <div class='mb-4 d-flex justify-content-around putyourclasses'>
-                        <div className="star-rating">
-                                {[1, 2, 3, 4, 5].map((star) => (
-                                    <span
-                                        key={star}
-                                        className="star"
-                                        onClick={() => handleClick(recipe.id ,star)}
-                                    >
-                                        {ratings[recipe.id] >= star ? (
-                                            <BiSolidStar color="gold" />
-                                        ) : (
-                                            <CiStar />
-                                        )}
-                                    </span>
-                                ))}
-                        </div>
-                            <div className="rating-display">
-                            Rating: (<span id="rating-value">{ratings[recipe.id] || 0}</span>)
+                
+        <h1 class="text-center" style={{marginTop: "2rem"}}>Desserts recipes</h1>
+        <div className="container py-5">
+                <div className="row row-cols-1 row-cols-md-3 g-4 py-2">
+                    {filterRecipe.map(recipe => (
+                        <div className="col" key={recipe.id}>
+                            <div className="card pdcard">
+                                <img src={recipe.image} className="card-img-top" alt="pic for the recipe"/>
+                                <div className="card-body pdcardbody">
+                                    <h5 className="card-title">{recipe.title}</h5>
+                                    <p className="card-text">{recipe.description}</p>
+                                </div>
+                                <div className="mb-4 d-flex justify-content-around putyourclasses">
+                                    <div className="star-rating">
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <span
+                                                key={star}
+                                                className="star"
+                                                onClick={() => handleClick(recipe.id, star)}
+                                            >
+                                                {ratings[recipe.id] >= star ? (
+                                                    <BiSolidStar color="gold" />
+                                                ) : (
+                                                    <CiStar />
+                                                )}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <div className="rating-display">
+                                        Rating: (<span id="rating-value">{ratings[recipe.id] || 0}</span>)
+                                    </div>
+                                </div>
+                                <div className="mb-4 d-flex justify-content-around wsbtn">
+                                    <button className="btn btn-primary">View Details</button>
+                                    <button onClick={() => {
+                                        toggleFavorite(recipe);
+                                        handleAddFavorite(recipe);
+                                    }}>
+                                        {favorites.some(fav => fav.id === recipe.id) ? <BiHeart color="red" /> : <BiHeart />}
+                                    </button>
+                                </div>
                             </div>
-                    </div>
-
-                    <div class="mb-4 d-flex justify-content-around wsbtn">
-                    <div> <button class="btn btn-primary">view details</button></div>
-                        <div> <a href='*'><CiBookmarkPlus /> </a>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
-      ))}
-
-
-
-
-
-        </div>
-    </div>
-
         </>
     );
 }
