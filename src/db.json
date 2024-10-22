@@ -263,42 +263,6 @@
   ],
   "favorites": [
     {
-      "id": "8cbd",
-      "userId": "8bf6",
-      "recipeId": "5r44sasd",
-      "title": "recipe -four",
-      "description": "description-four",
-      "image": "https://placehold.co/400",
-      "rating": 0
-    },
-    {
-      "id": "e0ec",
-      "userId": "8bf6",
-      "recipeId": "54e4sasd",
-      "title": "recipe -three",
-      "description": "description-three",
-      "image": "https://placehold.co/400",
-      "rating": 0
-    },
-    {
-      "id": "baa5",
-      "userId": "8bf6",
-      "recipeId": "5r44sasd",
-      "title": "recipe -four",
-      "description": "description-four",
-      "image": "https://placehold.co/400",
-      "rating": 4
-    },
-    {
-      "id": "5009",
-      "userId": "b03d",
-      "recipeId": "5q44sd",
-      "title": "Avocado Toast",
-      "description": "Creamy avocado spread on toasted bread, topped with cherry tomatoes and a sprinkle of salt.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3XBYtIP4HzjUe7SH6w0d_ly-SBfqmMsBEA&s",
-      "rating": 0
-    },
-    {
       "id": "6380",
       "userId": "b03d",
       "recipeId": "54w4ddsd",
@@ -308,21 +272,48 @@
       "rating": 0
     },
     {
-      "id": "81c5",
-      "userId": "b03d",
-      "recipeId": "dun212snf",
-      "title": "Quinoa Salad",
-      "description": "A refreshing salad with quinoa, cucumbers, tomatoes, and a lemon vinaigrette.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx73OZIm9TqywMBmZFdZTWPMAJdZ7QKbgddw&s",
+      "id": "b996",
+      "userId": "8bf6",
+      "recipeId": "dpn55422145snf",
+      "title": "Chicken Caesar Salad",
+      "description": "Crisp romaine lettuce, grilled chicken, croutons, and Caesar dressing.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVItSG0F02K7S9bFjwSz098u68ZFm0IOGiQ&s",
       "rating": 0
     },
     {
-      "id": "0dad",
+      "id": "422a",
       "userId": "b03d",
-      "recipeId": "dni544snf",
-      "title": "Caprese Sandwich",
-      "description": "Fresh mozzarella, basil, and tomatoes drizzled with balsamic glaze on crusty bread.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyM5mnjIHYQJ7i_--GGZlQ0j8P6QMc8x71fw&s",
+      "recipeId": "dans55645nf",
+      "title": "Tuna Salad Wrap",
+      "description": "Tuna mixed with mayonnaise and veggies, wrapped in a tortilla.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB30hs9a7F2lW3wJZkGD6yPlIqvfWFqeXa5A&s",
+      "rating": 0
+    },
+    {
+      "id": "089d",
+      "userId": "b03d",
+      "recipeId": "dsn55snf",
+      "title": "Minestrone Soup",
+      "description": "A hearty vegetable soup with pasta and beans, flavored with herbs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45esMhhMNLTvhs3eF4_Lde5tyvzEVb6fZ5g&s",
+      "rating": 0
+    },
+    {
+      "id": "fc5a",
+      "userId": "b03d",
+      "recipeId": "5q44sd",
+      "title": "Avocado Toast",
+      "description": "Creamy avocado spread on toasted bread, topped with cherry tomatoes and a sprinkle of salt.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3XBYtIP4HzjUe7SH6w0d_ly-SBfqmMsBEA&s",
+      "rating": 0
+    },
+    {
+      "id": "09e7",
+      "userId": "b03d",
+      "recipeId": "5t44sasd",
+      "title": "Smoothie Bowl",
+      "description": "A thick smoothie served in a bowl, topped with granola, nuts, and fruits.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtXEY-UTwVZRSSbJghGexBjnHmb7JoI0ZRg&s",
       "rating": 0
     }
   ]

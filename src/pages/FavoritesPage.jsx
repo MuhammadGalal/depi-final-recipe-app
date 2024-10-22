@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
@@ -8,6 +9,8 @@ import { useUser } from "../context/UserContext";
 function FavoritesPage() {
     const { user } = useUser();
     const [favorites, setFavorites] = useState([]);
+
+    const nav = useNavigate();
     
 
     useEffect(() => {
@@ -47,7 +50,7 @@ function FavoritesPage() {
                                     <MdDeleteForever />
                                 </a>
                             </div>
-                            <button type="button" id="btn-fevo">See Recipe</button>
+                            <button onClick={()=> nav(`/top-meals/${recipe.recipeId}`)}  type="button" id="btn-fevo">See Recipe</button>
                         </div>
                     </div>
                     <hr />

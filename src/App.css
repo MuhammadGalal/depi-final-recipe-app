@@ -858,6 +858,7 @@ img {
 .mealCard {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  min-height: 450px;
 }
 
 .mealCard:hover {
@@ -925,7 +926,6 @@ h1 {
 .mealInfo {
   align-items: center;
   max-width: 300px;
-  min-height: 500px;
   margin: auto;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { CiStar } from "react-icons/ci";
 import { BiHeart, BiSolidStar } from "react-icons/bi";
 import { useSearch } from "../context/SearchContext";
@@ -26,6 +27,7 @@ export default function Breakfast() {
             addFavorite(recipe)
         }
     };
+    const nav = useNavigate()
 
     const handleAddFavorite = (recipe) => {
         if (!user) {
@@ -97,7 +99,7 @@ export default function Breakfast() {
                                     </div>
                                 </div>
                                 <div className="mb-4 d-flex justify-content-around wsbtn">
-                                    <button className="btn btn-primary">View Details</button>
+                                    <button onClick={()=> nav(`/top-meals/${recipe.id}`)} className="btn btn-primary">View Details</button>
                                     <button onClick={() => {
                                         toggleFavorite(recipe);
                                         handleAddFavorite(recipe);
