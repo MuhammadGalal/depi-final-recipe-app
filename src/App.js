@@ -22,6 +22,11 @@ import ProfilePage from './pages/ProfilePage';
 import { UserProvider } from './context/UserContext';
 import { SearchProvider } from './context/SearchContext';
 import { FavoritesProvider } from './context/FavoritesContext';
+import PrivacyPolicy from './pages/privacypolicy';
+import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
+import Resources from './pages/Resources';
+import News from './pages/News';
 
 
 
@@ -53,6 +58,13 @@ function App() {
           <Route path='/medanypage' element={<MedanyPage />} /> {/*Mo'men update*/}
           <Route path='/salahpage' element={<SalahPage />} /> {/*Mo'men update*/}
           <Route path='/hossampage' element={<HossamPage />} /> {/*Mo'men update*/}
+          
+          <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/> {/*salah update*/}
+          <Route path='/News' element={<News/>}/> {/*salah update*/}
+          <Route path='/AboutUs' element={<AboutUs/>}/> {/*salah update*/}
+          <Route path='/Services' element={<Services/>}/> {/*salah update*/}
+          <Route path='/Resources' element={<Resources/>}/> {/*salah update*/}
+
         </Routes>
         <Footer /> {/* salah update */}
         </FavoritesProvider>

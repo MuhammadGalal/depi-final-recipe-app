@@ -1,6 +1,7 @@
 import { FaFacebook,FaInstagram,FaTiktok } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaRegCopyright } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -16,30 +17,30 @@ const Footer = () => {
                             
                             <ul>
                                 <li className="nav-item">
-                                    <a href="/">about us</a>
+                                <NavLink to="/AboutUs">About Us</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/">News</a>
+                                <NavLink to="/News">News</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/">privacy policy</a>
+                                <NavLink to="/PrivacyPolicy">privacy policy</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/">Services</a>
+                                <NavLink to="/Services">Services</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/">Resources</a>
+                                <NavLink to="/Resources">Resources</NavLink>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-6 col-lg-4 col-12 ft-3">
                             <h5>follow us</h5>
                             <ul>
-                            <li><a href='/'><i><FaFacebook /></i> facebook</a></li>
-                            <li><a href='/'><i><FaInstagram /></i> Instagram</a></li>
+                            <li><a href='https://www.facebook.com/r.php' target="_blank" rel="noopener noreferrer"><i><FaFacebook /></i> facebook</a></li>
+                            <li><a href='https://www.instagram.com/accounts/emailsignup/' target="_blank" rel="noopener noreferrer"><i><FaInstagram /></i> Instagram</a></li>
 
-                            <li><a href='/'><i><RiTwitterXLine /></i> Twitter</a></li>
-                            <li><a href='/'><i><FaTiktok /></i> tiktok</a></li>
+                            <li><a href='https://twitter.com/i/flow/signup' target="_blank" rel="noopener noreferrer"><i><RiTwitterXLine /></i> Twitter</a></li>
+                            <li><a href='https://www.tiktok.com/signup' target="_blank" rel="noopener noreferrer"><i><FaTiktok /></i> tiktok</a></li>
                             </ul>
                         </div>
                         
