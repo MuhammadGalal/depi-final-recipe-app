@@ -1191,6 +1191,7 @@ h1 {
 
 
 /* mo'men updates */
+
 /* salah updates */
 
 .Footer {
@@ -1237,6 +1238,9 @@ h1 {
   color: #000;
   font-size: 1.06rem;
 }
+.ft-2 a:hover{
+  color:#52d082 ;
+}
 
 .ft-3 ul {
   list-style: none;
@@ -1280,3 +1284,105 @@ h1 {
 }
 
 /* salah updates */
+/* salah updates for pages in footer */
+
+
+/* start of about us css */
+.about-us-section {
+  text-align: center;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.about-us-title {
+  color: #52d082; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about-us-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.about-us-highlight {
+  color: #52d082;
+  font-weight: bold;
+}
+
+/* end of about us css */
+
+
+/* start of news */
+.news-section {
+  text-align: center;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.news-title {
+  color: #52d082; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.news-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* end of news */
+
+/*start for resources*/
+.resources-section {
+  text-align: center;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.resources-title {
+  color: #52d082; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resources-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/*end for resources*/
+
+/*services start*/
+.services-section {
+  text-align: center;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.services-title {
+  color: #52d082; 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/*services end*/
